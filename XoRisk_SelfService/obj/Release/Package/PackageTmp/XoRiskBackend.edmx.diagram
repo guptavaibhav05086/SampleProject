@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9344b7083aac4703bcd66e1001c6bad2" Name="Diagram1">
+        <EntityTypeShape EntityType="XoriskExeManagementBackendModel.AspNetRole" Width="1.5" PointX="0.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="XoriskExeManagementBackendModel.AspNetUserClaim" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="XoriskExeManagementBackendModel.AspNetUserLogin" Width="1.5" PointX="5.25" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="XoriskExeManagementBackendModel.AspNetUser" Width="1.5" PointX="3" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="XoriskExeManagementBackendModel.Project" Width="1.5" PointX="0.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="XoriskExeManagementBackendModel.ProjectScript" Width="1.5" PointX="3" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="XoriskExeManagementBackendModel.Script" Width="1.5" PointX="0.75" PointY="11.25" IsExpanded="true" />
+        <AssociationConnector Association="XoriskExeManagementBackendModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="XoriskExeManagementBackendModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="XoriskExeManagementBackendModel.FK_dbo_ProjectScripts_dbo_Projects_ProjectId" ManuallyRouted="false" />
+        <AssociationConnector Association="XoriskExeManagementBackendModel.FK_dbo_ProjectScripts_dbo_Scripts_ScriptId" ManuallyRouted="false" />
+        <AssociationConnector Association="XoriskExeManagementBackendModel.AspNetUserRoles" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="XoriskExeManagementBackendModel.ScanReport" Width="1.5" PointX="7.375" PointY="0.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,3116 @@
+
+
+'-----------------Embed Software.txt---------------------------------------
+
+'********************************************
+strSoftware_MS="BizTalk,Contact,Developers,Exchange,Expression,Forefront,Foundation,FoxPro,FrontPage,ISA,MapPoint,Microsoft,MSDN,Office,Outlook,Professional,Project,SP1,SP2,SQL,Studio,Virtual,Visio,Windows,Windows(R),Works,XP,terminal,right,hyper,mstsc,remote,desktop,license,licensing,termserv,RD,Virtual,excel,groove,infopath,Access,MSPUB,ONENOTE,Word,POWERPNT,VISIO,WINWORD"
+'************************
+strSoftware_nothing="nothing"
+'********************************************
+'Purpose:
+'Registry Inputs
+
+
+'********************************************
+strRegHKEY_MS="SOFTWARE\Microsoft\Office\10.0\Registration" & VbCrLf & "SOFTWARE\Microsoft\Office\11.0\Registration" & VbCrLf & "SOFTWARE\Microsoft\Office\12.0\Registration" & VbCrLf & "SOFTWARE\Microsoft\Office\13.0\Registration" & VbCrLf & "SOFTWARE\Microsoft\Office\14.0\Registration" & VbCrLf & "SOFTWARE\Microsoft\Office\15.0\Registration" & VbCrLf & "SOFTWARE\Microsoft\Office\16.0\Registration" & VbCrLf & "Software\WOW6432Node\Microsoft\Office\10.0\Registration" & VbCrLf & "Software\WOW6432Node\Microsoft\Office\11.0\Registration" & VbCrLf & "Software\WOW6432Node\Microsoft\Office\12.0\Registration" & VbCrLf & "Software\WOW6432Node\Microsoft\Office\13.0\Registration" & VbCrLf & "Software\WOW6432Node\Microsoft\Office\14.0\Registration" & VbCrLf & "Software\WOW6432Node\Microsoft\Office\15.0\Registration" & VbCrLf & "Software\WOW6432Node\Microsoft\Office\16.0\Registration" & VbCrLf & "Software\Microsoft\MSDN\7.0\Registration" & VbCrLf & "Software\Microsoft\MSDN\8.0\Registration" & VbCrLf & "Software\Microsoft\MSDN\9.0\Registration" & VbCrLf & "Software\Microsoft\MSDN\10.0\Registration" & VbCrLf & "Software\Microsoft\MSDN\11.0\Registration" & VbCrLf & "Software\WOW6432Node\Microsoft\MSDN\7.0\Registration" & VbCrLf & "Software\WOW6432Node\Microsoft\MSDN\8.0\Registration" & VbCrLf & "Software\WOW6432Node\Microsoft\MSDN\9.0\Registration" & VbCrLf & "Software\WOW6432Node\Microsoft\MSDN\10.0\Registration" & VbCrLf & "Software\WOW6432Node\Microsoft\MSDN\11.0\Registration" & VbCrLf & "Software\Microsoft\VSA\7.0\Registration" & VbCrLf & "Software\Microsoft\VSA\8.0\Registration"& VbCrLf & "Software\Microsoft\VSA\9.0\Registration" & VbCrLf & "Software\Microsoft\VSA\10.0\Registration" & VbCrLf & "Software\WOW6432Node\Microsoft\VSA\7.0\Registration" & VbCrLf & "Software\WOW6432Node\Microsoft\VSA\8.0\Registration" & VbCrLf & "Software\WOW6432Node\Microsoft\VSA\9.0\Registration" & VbCrLf & "Software\WOW6432Node\Microsoft\VSA\10.0\Registration" & VbCrLf & "Software\Microsoft\VisualStudio\7.0\Setup\VS" & VbCrLf & "Software\Microsoft\VisualStudio\8.0\Setup\VS" & VbCrLf & "Software\Microsoft\VisualStudio\9.0\Setup\VS" & VbCrLf & "Software\Microsoft\VisualStudio\10.0\Setup\VS" & VbCrLf & "Software\Microsoft\VisualStudio\11.0\Setup\VS" & VbCrLf & "Software\Microsoft\VisualStudio\12.0\Setup\VS" & VbCrLf & "Software\WOW6432Node\Microsoft\VisualStudio\7.0\Registration" & VbCrLf & "Software\WOW6432Node\Microsoft\VisualStudio\8.0\Registration" & VbCrLf & "Software\WOW6432Node\Microsoft\VisualStudio\9.0\Registration" & VbCrLf & "Software\WOW6432Node\Microsoft\VisualStudio\10.0\Registration" & VbCrLf & "Software\WOW6432Node\Microsoft\VisualStudio\11.0\Registration" & VbCrLf & "Software\WOW6432Node\Microsoft\VisualStudio\12.0\Registration" & VbCrLf & "Software\Microsoft\VisualStudio\7.0\Registration" & VbCrLf & "Software\Microsoft\VisualStudio\8.0\Registration" & VbCrLf & "Software\Microsoft\VisualStudio\9.0\Registration" & VbCrLf & "Software\Microsoft\VisualStudio\10.0\Registration" & VbCrLf & "Software\Microsoft\VisualStudio\11.0\Registration" & VbCrLf & "Software\Microsoft\VisualStudio\12.0\Registration" & VbCrLf & "Software\WOW6432Node\Microsoft\VisualStudio\7.0\Setup\VS" & VbCrLf & "Software\WOW6432Node\Microsoft\VisualStudio\8.0\Setup\VS" & VbCrLf & "Software\WOW6432Node\Microsoft\VisualStudio\9.0\Setup\VS" & VbCrLf & "Software\WOW6432Node\Microsoft\VisualStudio\10.0\Setup\VS" & VbCrLf & "Software\WOW6432Node\Microsoft\VisualStudio\11.0\Setup\VS" & VbCrLf & "Software\WOW6432Node\Microsoft\VisualStudio\12.0\Setup\VS" & VbCrLf & "Software\Microsoft\Exchange\Setup" & VbCrLf & "Software\Microsoft\BizTalk Server" & VbCrLf & "Software\Microsoft\Live Meeting" & VbCrLf & "Software\Microsoft\ActiveSync" & VbCrLf & "Software\Microsoft\Virtual Machine" & VbCrLf & "Software\WOW6432Node\Microsoft\Exchange\Setup" & VbCrLf & "Software\WOW6432Node\Microsoft\BizTalk Server" & VbCrLf & "Software\WOW6432Node\Microsoft\Live Meeting" & VbCrLf & "Software\WOW6432Node\Microsoft\ActiveSync" & VbCrLf & "Software\WOW6432Node\Microsoft\Virtual Machine" & VbCrLf & "Software\Microsoft\Shared Tools\Web Server Extensions" & VbCrLf & "Software\Microsoft\OLAP Server" & VbCrLf & "Software\Microsoft\MSSQLServer\Setup" & VbCrLf & "Software\Microsoft\Microsoft SQL Server" & VbCrLf & "Software\Microsoft\Microsoft SQL Server\80\Tools\Setup" & VbCrLf & "Software\Microsoft\Microsoft SQL Server\90\Tools\Setup" & VbCrLf & "Software\Microsoft\Microsoft SQL Server\100\Tools\Setup" & VbCrLf & "Software\Microsoft\Microsoft SQL Server\110\Tools\Setup" & VbCrLf & "Software\Microsoft\Microsoft SQL Server\120\Tools\Setup" & VbCrLf & "Software\WOW6432Node\Microsoft\Shared Tools\Web Server Extensions" & VbCrLf & "Software\WOW6432Node\Microsoft\OLAP Server" & VbCrLf & "Software\WOW6432Node\Microsoft\MSSQLServer\Setup" & VbCrLf & "Software\WOW6432Node\Microsoft\Microsoft SQL Server" & VbCrLf & "Software\WOW6432Node\Microsoft\Microsoft SQL Server\80\Tools\Setup" & VbCrLf & "Software\WOW6432Node\Microsoft\Microsoft SQL Server\90\Tools\Setup" & VbCrLf & "Software\WOW6432Node\Microsoft\Microsoft SQL Server\100\Tools\Setup" & VbCrLf & "Software\WOW6432Node\Microsoft\Microsoft SQL Server\110\Tools\Setup" & VbCrLf & "Software\Microsoft\Shared Tools\Web Server Extensions\12.0\WSS\InstalledProducts" & VbCrLf & "Software\Microsoft\Shared Tools\Web Server Extensions\14.0\WSS\InstalledProducts" & VbCrLf & "Software\Microsoft\Shared Tools\Web Server Extensions\15.0\WSS\InstalledProducts" & VbCrLf & "Software\WOW6432Node\Microsoft\Shared Tools\Web Server Extensions\12.0\WSS\InstalledProducts" & VbCrLf & "Software\WOW6432Node\Microsoft\Shared Tools\Web Server Extensions\14.0\WSS\InstalledProducts" & VbCrLf & "Software\WOW6432Node\Microsoft\Shared Tools\Web Server Extensions\15.0\WSS\InstalledProducts" & VbCrLf & "SOFTWARE\Microsoft\Virtual Machine\Guest\Parameters" & VbCrLf & "SOFTWARE\WOW6432Node\Microsoft\Virtual Machine\Guest\Parameters" 
+
+'********************************************
+
+'Purpose:
+'Exclude services, processes and registry entries in output
+
+strExclude="SERVICES|" & VbCrLf & "PROCESSES|" & VbCrLf & "REGDS|"
+'-----------------End Embed------------------------------------------------
+
+SetLocale("en-us")
+
+Dim Today,strContent,arrFilename,arrFileNames		
+Today = getTimestamp
+
+Const HKEY_CLASSES_ROOT = &H80000000				
+Const HKEY_LOCAL_MACHINE = &H80000002				
+Const HKEY_CURRENT_USER = &H80000001	
+Const HKEY_USERS = &H80000003			
+Const ForReading = 1				
+Const REG_BINARY = 3
+Dim arrSubKeys1(17,1)
+Dim arrSubKeys2(1,1)
+Dim foundKeys
+Dim arrDPIDBytes
+Dim iValues, arrDPID
+ReDim PathArray(1)	
+foundKeys = Array()
+iValues = Array()
+ReDim PathArray(1)	
+Dim objReg,StrUAFilePath,StrUAFilename,StrUATimesExecuted,StrUAFocusC,StrUAFocusT,strUALastRun,StrUAXPU	
+Dim objWShell
+Dim objFile, objFSO, objFileTemp
+'Dim Colsoftware, objSoftware, objWMIService, objProcess, colProcess
+Dim supressEchos				
+supressEchos = 0
+				
+Set objWShell = CreateObject("WScript.Shell")				
+		
+Set objFSO = CreateObject("Scripting.FileSystemObject")	
+
+Set objWShell = CreateObject("WScript.Shell")	
+Set objFSO = CreateObject("Scripting.FileSystemObject")				
+
+
+strSoftware=strSoftware_nothing
+strRegHKEY= strRegHKEY_MS
+
+strComputer = "127.0.0.1"
+arrSoftware = Split(strSoftware, ",")
+arrRegHKEY = Split (strRegHKEY, VbCrLf)				
+tempExclude=Split(strExclude, VbCrLf)
+	
+	For Each tmpExclude In tempExclude
+		If Split(Trim(tmpExclude),"|")(0)="REGDS" Then
+			arrRegExclude=Split(Split(Trim(tmpExclude),"|")(1),",")
+		ElseIf Split(Trim(tmpExclude),"|")(0)="PROCESSES" Then
+			arrProcExclude=Split(Split(Trim(tmpExclude),"|")(1),",")
+		ElseIf Split(Trim(tmpExclude),"|")(0)="SERVICES" Then
+			arrServExclude=Split(Split(Trim(tmpExclude),"|")(1),",")	
+		End If
+	Next	
+	
+
+
+strComputer = Replace(strComputer, Chr(13), "", 1, -1, 1)				
+strComputer = Replace(strComputer, Chr(10), "", 1, -1, 1)              				
+strHostName = ""				
+strIPAddress = ""				
+strHostIPAddress = ""				
+WScript.Echo "System: " & strComputer				
+strHostName = GetHostName(strComputer)				
+strHostIPAddress = GetIPAddress(strComputer)				
+	If supressEchos <> 1 Then				
+		WScript.Echo " Hostname: " & strHostName				
+	End If				
+	
+	
+
+	If objFSO.FileExists(".\XOR_Tool_OP_TEMP.csv") Then
+		Set objFileTemp = objFSO.OpenTextFile(".\XOR_Tool_OP_TEMP.csv", ForReading)
+        Do Until objFileTemp.AtEndOfStream		
+		strNametag = Trim(objFileTemp.ReadAll)
+		Loop
+		
+		objFileTemp.close
+		strHostnameTemp=Split(strNametag,"`")(0)
+		
+		strIPaddressTemp=Split(strNametag,"`")(1)
+		
+		If Trim(strHostName)="" Or Trim(strHostName)="127.0.0.1" Then
+		If strHostnameTemp <> "BLANK" Then
+		strHostName=strHostnameTemp
+		End If		
+		End If
+		If Trim(strHostIPAddress)="" Or Trim(strHostIPAddress)="127.0.0.1" Then
+		If strIPaddressTemp <> "BLANK" Then
+		strHostIPAddress=strIPaddressTemp
+		End If		
+		End If
+	End If
+	
+
+
+	
+	localPath0= strHostName & "#" & strHostIPAddress & "#" & Today & "_PrimaryDetails" & "_XOR.csv"				
+	localPath1= strHostName & "#" & strHostIPAddress & "#" & Today & "_SecondaryDetails" & "_XOR.csv"	
+	localPath2= strHostName & "#" & strHostIPAddress & "#" & Today & "_FileDetails" & "_XOR.csv"	
+	
+	Set outLocalFile0 = objFSO.CreateTextFile(localPath0)
+	Set outLocalFile1 = objFSO.CreateTextFile(localPath1)
+	Set outLocalFile2 = objFSO.CreateTextFile(localPath2)
+
+	
+	GetIPAddressDetails strHostName				
+	GetDomainName strHostName
+	GetBIOSDetails strHostName
+	OS strHostName			
+Completedetails strHostName
+GetARPWMIC strHostName
+GetARPRegalt strHostName
+GetARPRegals strHostName
+UninstalledPrograms_all_Events strHostName
+Services_processes1 strHostName
+	Services_processes2 strHostName
+    Getserverrole strHostName
+	'GetServices strHostName
+	GetProReg strHostName
+	RegDeepScan HKEY_LOCAL_MACHINE,arrRegHKEY,strHostName
+	RegDeepScan HKEY_CURRENT_USER,arrRegHKEY,strHostName				
+    CPUCount strHostName				
+	ComputerType strHostName
+    GetCoreDetails strHostName	
+	ComputerUsers strHostName
+	GetLocalUsers strHostName
+        'RAM strHostName	
+	EventLogClear_Events strHostName
+	'InstPrograms_Events strHostName
+	'UninstalledPrograms_Events strHostName
+	GetSerialNumber strHostName 	
+	GetProductKeys  strHostName
+	SysInstallDate strHostName
+	SystemDate strHostName
+	GetSQLServerVersion strHostName
+	GetSQLServerEdition strHostName
+	GetSQLALL strHostName
+	GetSharepointServerVersion strHostName	
+	GetVirtualMachinesState strHostName
+	GetVirtualMachinesInfo strHostName
+	GetPhysicalHostOfVM strHostName
+	'GetRunningProcess strHostName
+	SearchFiles strHostName
+	FileUsageScan strHostName
+	GetFontsDetails strHostName
+	GetSearch strHostName
+
+'ARPScan strHostName
+
+    outLocalFile0.Close
+	outLocalFile1.Close
+	outLocalFile2.Close
+	
+	If objFSO.FileExists(".\XOR_Tool_OP_TEMP.csv") Then
+	Set objFile = objFSO.GetFile(".\XOR_Tool_OP_TEMP.csv")
+	objFile.Delete
+	End If
+	
+	Set outLocalFile0 = objFSO.CreateTextFile(".\XOR_Tool_OP_Status0.csv", ForReading)
+	outLocalFile0.write(localPath0)
+	path = ""							
+	localPath0=""	
+	outLocalFile0.Close
+	'wscript.echo strHostName & " Tool Execution Concluded."
+	
+	
+	Set outLocalFile1 = objFSO.CreateTextFile(".\XOR_Tool_OP_Status1.csv", ForReading)	
+	outLocalFile1.write(localPath1)
+	path = ""							
+	localPath1=""	
+    outLocalFile1.Close
+	'wscript.echo strHostName & " Tool Execution Concluded."
+		
+	
+	Set outLocalFile2 = objFSO.CreateTextFile(".\XOR_Tool_OP_Status2.csv", ForReading)	
+    outLocalFile2.write(localPath2)
+	path = ""							
+	localPath2=""
+    outLocalFile2.Close	
+    WScript.echo strHostName & " Tool Execution Concluded."
+	
+	
+
+Set outLocalFile0 = Nothing
+Set outLocalFile1 = Nothing
+Set outLocalFile2 = Nothing
+Set arrSoftware = Nothing				
+Set arrRegHKEY = Nothing				
+Set objFSO = Nothing				
+Set objFile = Nothing			
+
+Sub RAM(strComputer)				
+                Err.Clear				
+                On Error Resume Next				
+                Set objWMIService = GetObject("winmgmts:" & "{impersonationLevel=impersonate}!\\" & strComputer & "\root\cimv2")				
+                '----- If error, write output to file -----				
+                If Err.Number<>0 Then 				
+                                Write0("[LOG-STATUS]" & quotedString(strComputer) & "," & "Error " & Err.Number & " - " & Err.Description & "," & "RAM Scan: Failed")				
+                                Err.Clear				
+                Else				
+                                '----- Get RAM data from WMI -----				
+                                Set colItems = objWMIService.ExecQuery("SELECT * FROM Win32_PhysicalMemoryArray")				
+                                For Each objItem In colItems				
+                                                RAM = objItem.MaxCapacity				
+                                                Write0("RAM" & "," & quotedString(strComputer) & "," & "Max Capacity:" & "," & Round(objItem.MaxCapacity / 1024))				
+                                Next                      				
+                                Set colItems = objWMIService.ExecQuery("SELECT * FROM Win32_LogicalMemoryConfiguration")                                          				
+                                For Each objItem In colItems                                                                      				
+                                                RAM = objItem.TotalPhysicalMemory                    				
+                                                Write0("RAM" & "," & quotedString(strComputer) & "," & "Available:" & "," & Round(objItem.TotalPhysicalMemory / 1024))                                                   				
+                                Next                      				
+                                Set objWMIService = Nothing                     				
+                                WScript.Echo " RAM Scan: OK"				
+                End If				
+End Sub	
+
+Sub GetBIOSDetails(strComputer)				
+                Err.Clear				
+                On Error Resume Next				
+                Set objWMIService = GetObject("winmgmts:" & "{impersonationLevel=impersonate}!\\" & strComputer & "\root\cimv2")				
+                '----- If error, write output to file -----				
+                If Err.Number<>0 Then 				
+                                Write0("[LOG-STATUS]" & quotedString(strComputer) & "," & "Error " & Err.Number & " - " & Err.Description & "," & "BIOS Scan: Failed")				
+                                Err.Clear				
+                Else				
+                                '----- Get BIOS data from WMI -----				
+                                                     				
+                                Set colItems = objWMIService.ExecQuery("SELECT * FROM Win32_BIOS")                                          				
+                                For Each objItem In colItems                                                                      				
+                                                Name = objItem.Name
+												Manufacturer = objItem.Manufacturer
+												ReleaseDate = objItem.ReleaseDate 
+												reportLine = "XOR_BIOS" & "," & quotedString(strComputer) & "," & quotedString(Name) & "," & quotedString(Manufacturer) & "," & quotedString(ReleaseDate) 
+												Write0(reportLine)
+                                Next                      				
+                                Set objWMIService = Nothing                     				
+                                WScript.Echo " BIOS Scan: OK"				
+                End If				
+End Sub
+
+
+Sub GetCoreDetails(strComputer)				
+                Err.Clear				
+                On Error Resume Next				
+                Set objWMIService = GetObject("winmgmts:" & "{impersonationLevel=impersonate}!\\" & strComputer & "\root\cimv2")				
+                '----- If error, write output to file -----				
+                If Err.Number<>0 Then 				
+                                Write0("[LOG-STATUS]" & quotedString(strComputer) & "," & "Error " & Err.Number & " - " & Err.Description & "," & "BIOS Scan: Failed")				
+                                Err.Clear				
+                Else				
+                                '----- Get  data from WMI -----				
+                                                     				
+                                Set colItems = objWMIService.ExecQuery("Select * from Win32_Processor")                                          				
+                                For Each objItem In colItems                                                                      				
+                                               Name = objItem.Name				
+                                               Cores = objItem.NumberOfCores
+											LogicalProcessors = objItem.NumberOfLogicalProcessors
+											Socket = objItem.SocketDesignation
+                                               Manufacturer = objItem.Manufacturer
+												
+												reportLine = "XOR_COMP-HARDWARE" & "," & quotedString(strComputer) & "," & quotedString(Name) & "," & quotedString(Manufacturer) & "," & quotedString(Cores) & "," & quotedString(LogicalProcessors) & "," & quotedString(Socket)
+												Write0(reportLine)
+                                Next                      				
+                                Set objWMIService = Nothing                     				
+                                'WScript.Echo " BIOS Scan: OK"				
+                End If				
+End Sub	
+			
+Sub ComputerType(strComputer)				
+                Err.Clear				
+                On Error Resume Next				
+                Set objWMIService = GetObject("winmgmts:" & "{impersonationLevel=impersonate}!\\" & strComputer & "\root\cimv2")				
+                '----- If error, write output to file -----				
+                If Err.Number<>0 Then 				
+                                Write0("[LOG-STATUS]" & quotedString(strComputer) & "," & "Error " & Err.Number & " - " & Err.Description & "," & "Computer Type Scan: Failed")				
+                                Err.Clear				
+                '----- Get Computer information from WMI -----				
+                Else        				
+                                Set colItems = objWMIService.ExecQuery("Select * from Win32_ComputerSystem")				
+                                For Each objItem In colItems				
+                                                Manufacturer = objItem.Manufacturer				
+                                                Model = objItem.Model				
+                                                NoOfPhysicalProc = objItem.NumberOfProcessors
+												NoOflogicalProc = objItem.NumberofLogicalProcessors
+												systemtype = objItem.SystemType
+                                                reportLine = "XOR_COMP" & "," & quotedString(strComputer) & "," & quotedString(Manufacturer) & "," & quotedString(Model) & "," & quotedString(NoOfPhysicalProc) & "," & quotedString(NoOflogicalProc) & "," & quotedString(systemtype)					
+                                                Write0(reportLine)				
+                                                Set Manufacturer = Nothing				
+                                                Set Model = Nothing                       				
+                                Next				
+                                WScript.Echo " Computer Type Scan: OK"				
+                                Set objWMIService = Nothing				
+                End If				
+End Sub	
+
+
+Sub ComputerUsers(strComputer)				
+                Err.Clear				
+                On Error Resume Next				
+                Set objWMIService = GetObject("winmgmts:" & "{impersonationLevel=impersonate}!\\" & strComputer & "\root\cimv2")				
+                '----- If error, write output to file -----				
+                If Err.Number<>0 Then 				
+                                Write0("[LOG-STATUS]" & quotedString(strComputer) & "," & "Error " & Err.Number & " - " & Err.Description & "," & "Computer Type Scan: Failed")				
+                                Err.Clear				
+                '----- Get Computer information from WMI -----				
+                Else        				
+                                Set colItems = objWMIService.ExecQuery("Select * from Win32_ComputerSystem")				
+                                For Each objItem In colItems				
+                                                strUserName = objItem.UserName
+
+                                                reportLine = "XOR_COMP-CURRENTUSER" & "," & quotedString(strComputer) & "," & quotedString(strUserName) 					
+                                                Write0(reportLine)				
+                                                Set strUserName = Nothing				
+                                                'Set Model = nothing                       				
+                                Next				
+                                WScript.Echo " User Scan: OK"				
+                                Set objWMIService = Nothing				
+                End If				
+End Sub
+	
+
+Sub GetLocalUsers (strComputer)				
+                Err.Clear				
+                On Error Resume Next				
+                Set objReg = GetObject("winmgmts:" & "{impersonationLevel=impersonate}!\\" & strComputer & "\root\default:StdRegProv")
+				
+				stringPath ="SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList"
+				
+                
+				If Err.Number<>0 Then				
+                                If supressEchos <> 1 Then				
+                                'WScript.Echo " Domain Scan: Error"				
+                                End If				
+                                Write0("[LOG-STATUS]" & "," & quotedString(strComputer) & "," & "Error " & Err.Number & " - " & Err.Description & "," & "User Scan: Failed")                            				
+                                Err.Clear               				
+                Else        	
+								 objReg.EnumKey HKEY_LOCAL_MACHINE, stringPath, stringarrSubkeys
+								 
+								 For Each objSubkey In stringarrSubkeys
+									strValueName = "ProfileImagePath"
+									strSubPath = stringPath & "\" & objSubkey
+									objReg.GetExpandedStringValue HKEY_LOCAL_MACHINE,strSubPath,strValueName,strValue123
+									'Wscript.Echo strValue
+									sval = Split(strValue123,"\")
+									sval1 = UBound(sval)
+									
+									reportLine = "XOR_COMP-USERNAMES" & "," & quotedString(strComputer) & "," & quotedString(strValue123) & "," & quotedString(sval(sval1)) 
+                                    Write0(reportLine)
+									
+									
+								 Next
+
+                                
+												
+                End If				
+                Set objReg=Nothing       				
+End Sub			
+			
+
+			
+Function GetSerialNumber(strComputer)				
+                Err.Clear				
+                On Error Resume Next				
+                Set objWMIService = GetObject("winmgmts:" & "{impersonationLevel=impersonate}!\\" & strComputer & "\root\cimv2")				
+                If Err.Number<>0 Then				
+                    strHostName = strComputer				
+                Else				
+    Set colItems = objWMIService.ExecQuery("Select * from Win32_BIOS")				
+                    For Each objItem In colItems				
+                                    strSerialNumber = objItem.SerialNumber				
+                    Next				
+    End If				
+                reportLine = "XOR_Serial-Number" & "," & quotedString(strComputer) & "," & quotedString(strSerialNumber)	
+					Write0(reportLine)						
+End Function
+
+Sub CPUCount(strComputer)				
+                Err.Clear				
+                On Error Resume Next				
+                If objFSO.FileExists(".\CHKCPU32.exe") Then
+
+					Set oShell = CreateObject ("WScript.Shell")
+					Set oExec = oShell.Exec("CHKCPU32.exe /V")
+				
+					Do While oExec.Status = 0
+					  WScript.Sleep 1000
+					Loop
+				
+					CPUArray = Split(oExec.StdOut.ReadAll, VbCrLf)
+				
+					For Each Line In CPUArray
+						If Line <> "" Then
+						
+							If InStr(Line, "CPU Identification utility v2.07") Or InStr(Line, "ŽŽ") Then
+								
+							Else
+								Write0("CPU" & "," & quotedString(strComputer) & "," & Line)
+							End If
+						
+						End If
+					Next
+				
+				Set oShell = Nothing
+				Set oExec = Nothing
+				
+				WScript.Echo " Processor Scan: OK"	
+				
+				Else 
+					Set objWMIService = GetObject("winmgmts:" & "{impersonationLevel=impersonate}!\\" & strComputer & "\root\cimv2")				
+					If Err.Number<>0 Then				
+			Write0("[LOG-STATUS]" & "," & quotedString(strComputer) & "," & "Error " & Err.Number & " - " & Err.Description & "Processor Scan: Failed")				
+									Err.Clear				
+					Else				
+									Set colItems = objWMIService.ExecQuery("Select * from Win32_Processor")				
+									For Each objItem In colItems				
+										If IsNull(objItem.NumberOfCores) Then				
+											'Legacy Method				
+											Dim arrCores()				
+											Dim arrProcs()				
+											i = 0                				
+											Set colProcs = objWMIService.ExecQuery("Select * from Win32_Processor")				
+											For Each objProc In colProcs                                        				
+															Name = objProc.Name				
+															DeviceID = objProc.DeviceID				
+															ReDim Preserve arrCores(i)				
+															arrCores(i) = objProc.DeviceID				
+															Socket = objProc.SocketDesignation				
+															Cores = objProc.NumberOfCores				
+															ReDim Preserve arrProcs(i)				
+															arrProcs(i) = objProc.SocketDesignation				
+															i = i + 1				
+															Manufacturer = objProc.Manufacturer				
+															Write0("XOR_CPUDATA" & "," & quotedString(strComputer) & "," & quotedString(Name) & "," & quotedString(DeviceID) & "," & quotedString(Socket) & "," & quotedString(Manufacturer) & "," & "" & "," & "")				
+															Set Name = Nothing				
+															Set DeviceID = Nothing				
+															Set Socket = Nothing				
+															Set Manufacturer = Nothing				
+											Next				
+											'----- Calculate core and processor count -----				
+											CoreCount = 0				
+											ProcCount = 0                            				
+											Set objDictionaryA = CreateObject("Scripting.Dictionary")				
+											objDictionaryA.CompareMode = 1				
+											Set objDictionaryB = CreateObject("Scripting.Dictionary")				
+											objDictionaryB.CompareMode = 1                   				
+											For j = 0 To UBound(arrCores)				
+															If Not objDictionaryA.Exists(arrCores(j)) Then				
+																	objDictionaryA.Add arrCores(j), arrCores(j)				
+															End If				
+											Next              				
+											For Each arrCores In objDictionaryA.Keys				
+															CoreCount = CoreCount + 1				
+											Next				
+											For k = 0 To UBound(arrProcs)				
+															If Not objDictionaryB.Exists(arrProcs(k)) Then				
+																	objDictionaryB.Add arrProcs(k), arrProcs(k)				
+															End If				
+											Next				
+											For Each arrProcs In objDictionaryB.Keys				
+												If Len(arrProcs) > 1 Then				
+																ProcCount = ProcCount + 1				
+												End If				
+											Next				
+											If CoreCount < Cores Then				
+															Write0("XOR_CPUCOUNT" & "," & quotedString(strComputer) & "," &  ProcCount & "," & "" & "," & Cores)				
+											Else				
+															Write0("XOR_CPUCOUNT" & "," & quotedString(strComputer) & "," &  ProcCount & "," & "" & "," & CoreCount)				
+											End If                            				
+											Set objWMIService = Nothing				
+																	WScript.Echo " Processor Scan: OK"				
+										Else				
+											'New Method (Vista/2k8/7)				
+											CoreCount = 0				
+											ProcCount = 0				
+											LogicalCount = 0				
+											Set colProcs = objWMIService.ExecQuery("Select * from Win32_Processor")                                      				
+											For Each objProc In colProcs				
+												ProcCount = ProcCount + 1				
+												CoreCount = CoreCount + objProc.NumberOfCores				
+												LogicalCount = LogicalCount + objProc.NumberOfLogicalProcessors                                         				
+												Name = objProc.Name				
+															DeviceID = objProc.DeviceID				
+															Socket = objProc.SocketDesignation				
+															Manufacturer = objProc.Manufacturer				
+															Write0("XOR_CPUDATA" & "," & quotedString(strComputer) & "," & quotedString(Name) & "," & quotedString(DeviceID) & "," & quotedString(Socket) & "," & quotedString(Manufacturer) & "," &  objProc.NumberOfCores & "," & objProc.NumberOfLogicalProcessors)				
+											Next                                      				
+											Write0("XOR_CPUCOUNT" & "," & quotedString(strComputer) & "," &  ProcCount & "," &  CoreCount & "," & LogicalCount)				
+											WScript.Echo " Processor Scan: OK"				
+										End If                                    				
+										Exit For   				
+									Next				
+					End If	
+				End If
+End Sub				
+
+Function GetHostName(strComputer)				
+                Err.Clear				
+                On Error Resume Next				
+                Set objWMIService = GetObject("winmgmts:" & "{impersonationLevel=impersonate}!\\" & strComputer & "\root\cimv2")				
+                If Err.Number<>0 Then				
+                    strHostName = strComputer				
+                Else				
+    Set colItems = objWMIService.ExecQuery("Select * from Win32_ComputerSystem")				
+                    For Each objItem In colItems				
+                                    strHostName = objItem.Name				
+                    Next				
+    End If				
+                GetHostName = Trim(strHostName)				
+End Function				
+
+Sub GetIPAddressDetails (strComputer)				
+                Err.Clear				
+                On Error Resume Next				
+                i = 0				
+                Set objWMIService = GetObject("winmgmts:" & "{impersonationLevel=impersonate}!\\" & strComputer & "\root\cimv2")				
+                Set colItems = objWMIService.ExecQuery("Select * From Win32_NetworkAdapterConfiguration WHERE IPEnabled=TRUE")				
+                If Err.Number<>0 Then				
+                                If supressEchos <> 1 Then				
+                                WScript.Echo " IP-Address Scan: Error"				
+                                End If				
+                                Write0("[LOG-STATUS]" & "," & quotedString(strComputer) & "," & "Error " & Err.Number & " - " & Err.Description & "," & "IP-Address Scan: Failed")                            				
+                                Err.Clear               				
+                Else        				
+                                For Each objInterface In colItems				
+                                  strNICType = objInterface.Description				
+                                  If Not IsNull(objInterface.IPAddress) Then				
+                                    For Each strIPAddress In objInterface.IPAddress				
+                                      If i = 0 Then				
+                                                                reportLine = "XOR_IPADDRESS" & "," & quotedString(strComputer) & "," & quotedString(strIPAddress) & "," & quotedString(strNICType) & "," & quotedString(objInterface.MACAddress)		
+                                                                Write0(reportLine)				
+                                                  End If				
+                                                  i = i + 1				
+                                                Next				
+                                  End If                  				
+                                Next				
+                                If supressEchos <> 1 Then				
+                                WScript.Echo " IPAddress Scan: OK"				
+                                End If				
+                End If				
+                Set objWMIService=Nothing       				
+End Sub		
+
+
+
+
+Sub GetDomainName (strComputer)				
+                Err.Clear				
+                On Error Resume Next				
+                Set objReg = GetObject("winmgmts:" & "{impersonationLevel=impersonate}!\\" & strComputer & "\root\default:StdRegProv")
+						
+                
+				If Err.Number<>0 Then				
+                                If supressEchos <> 1 Then				
+                                WScript.Echo " Domain Scan: Error"				
+                                End If				
+                                Write0("[LOG-STATUS]" & "," & quotedString(strComputer) & "," & "Error " & Err.Number & " - " & Err.Description & "," & "Domain Scan: Failed")                            				
+                                Err.Clear               				
+                Else        				
+                                objReg.GetStringValue HKEY_LOCAL_MACHINE,"SYSTEM\ControlSet001\services\Tcpip\Parameters","domain",strDomain
+								reportLine = "XOR_DomainName" & "," & quotedString(strComputer) & "," & quotedString(strDomain) 
+                                Write0(reportLine)				
+                             		
+                End If				
+                Set objReg=Nothing       				
+End Sub		
+
+
+
+		
+Function GetIPAddress (strComputer)				
+                Err.Clear				
+                Dim strHostIPAddress				
+                On Error Resume Next				
+                i = 0				
+                Set objWMIService = GetObject("winmgmts:" & "{impersonationLevel=impersonate}!\\" & strComputer & "\root\cimv2")				
+                Set colItems = objWMIService.ExecQuery("Select * From Win32_NetworkAdapterConfiguration WHERE IPEnabled=TRUE")				
+                If Err.Number<>0 Then				
+                                strHostIPAddress = "127.0.0.1"				
+                Else        				
+                                For Each objInterface In colItems				
+                                  strNICType = objInterface.Description				
+                                  If Not IsNull(objInterface.IPAddress) Then				
+                                    For Each strIPAddress In objInterface.IPAddress				
+                                      If i = 0 Then				
+                                                                strHostIPAddress = strIPAddress				
+                                                  End If				
+                                                  i = i + 1				
+                                                Next				
+                                  End If                  				
+                                Next				
+                End If				
+                Set objWMIService=Nothing				
+                GetIPAddress = strHostIPAddress				
+End Function				
+
+
+Sub ARPScan(strComputer)				
+                Err.Clear				
+                On Error Resume Next				
+                Set objReg = GetObject("winmgmts:" & "{impersonationLevel=impersonate}!\\" & strComputer & "\root\default:StdRegProv")				
+                If Err.Number<>0 Then				
+                                If supressEchos <> 1 Then				
+                                WScript.Echo " ARP Scan: Error"				
+                                End If				
+                                Write0("[LOG-STATUS]" & "," & quotedString(strComputer) & "," & "Error " & Err.Number & " - " & Err.Description & "," & "ARP Scan: Failed")				
+                                Err.Clear				
+                Else				
+                                strKeyPath = "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall"				
+                                objReg.EnumKey HKEY_LOCAL_MACHINE,strKeyPath,arrSubKeys				
+									For Each SubKey In arrSubKeys				
+										Dim i				
+										strSubKeyPath = (strKeyPath & "\" & SubKey)				
+										objReg.EnumValues HKEY_LOCAL_MACHINE,strSubKeyPath,arrEntryNames,arrValueTypes				
+										If IsNull(arrEntryNames) = False Then				
+												For i=0 To UBound(arrEntryNames)				
+																objReg.GetStringValue HKEY_LOCAL_MACHINE, strSubKeyPath, arrEntryNames(i), strValue                                               				
+																If (arrValueTypes(i)=1) Then                                                                       				
+																				If (InStr(arrEntryNames(i), "Publisher") Or InStr(arrEntryNames(i), "DisplayName")) Then				
+																								For Each objSoftwareKeyword In arrSoftware				
+																												If (InStr(1, LCase(strValue), LCase(objSoftwareKeyword), 1) = 1) Then 				
+																																kwdMatchFlag = 1				
+																																intRet1 = objReg.GetStringValue (HKEY_LOCAL_MACHINE, strSubKeyPath, "DisplayName", VarSoftProd)
+																																
+																																If intRet1 = 0 Then
+																																objReg.GetStringValue HKEY_LOCAL_MACHINE, strSubKeyPath, "DisplayName", VarSoftProd
+																																Else
+																																Exit For
+																																End If
+																																
+																																intRet2 = objReg.GetStringValue (HKEY_LOCAL_MACHINE, strSubKeyPath, "DisplayVersion", VarSoftVer)
+																																If intRet2 = 0 Then
+																																objReg.GetStringValue HKEY_LOCAL_MACHINE, strSubKeyPath, "DisplayVersion", VarSoftVer				
+																																Else
+																																VarSoftVer=""
+																																End If
+																																
+																																intRet3 = objReg.GetStringValue (HKEY_LOCAL_MACHINE, strSubKeyPath, "Publisher", VarSoftPub)		
+																																If intRet3 = 0 Then
+																																objReg.GetStringValue HKEY_LOCAL_MACHINE, strSubKeyPath, "Publisher", VarSoftPub				
+																																Else
+																																VarSoftPub=""
+																																End If
+																																
+																																intRet4 = objReg.GetStringValue (HKEY_LOCAL_MACHINE, strSubKeyPath, "InstallDate", VarInstDate)
+																																If intRet4 = 0 Then
+																																objReg.GetStringValue HKEY_LOCAL_MACHINE, strSubKeyPath, "InstallDate", VarInstDate				
+																																Else
+																																VarInstDate=""
+																																End If
+																																
+																																intRet5 = objReg.GetStringValue (HKEY_LOCAL_MACHINE, strSubKeyPath, "InstallLocation", VarInstLoc)
+																																If intRet5 = 0 Then
+																																objReg.GetStringValue HKEY_LOCAL_MACHINE, strSubKeyPath, "InstallLocation", VarInstLoc
+																																Else
+																																VarInstLoc=""
+																																End If
+																																
+																																intRet6 = objReg.GetStringValue (HKEY_LOCAL_MACHINE, strSubKeyPath, "InstallSource", VarInstSrc)                                                                                                                                              
+																																If intRet6 = 0 Then
+																																objReg.GetStringValue HKEY_LOCAL_MACHINE, strSubKeyPath, "InstallSource", VarInstSrc
+																																Else
+																																VarInstSrc=""
+																																End If
+																																
+																																If Not IsNull (VarInstLoc) Then
+																																	Set oFolder = objFSO.GetFolder(VarInstLoc)																																					
+																																	VarEstSize = oFolder.Size
+																																	reportLine = "XOR_ARP" & "," & quotedString(strComputer) & "," & quotedString(VarSoftPub) & "," & quotedString(VarSoftProd) & "," & quotedString(VarSoftVer) & "," & quotedString(VarInstDate) & "," & quotedString(VarInstLoc) & "," & quotedString(VarInstSrc) & "," & quotedString(strSubKeyPath) & "," & quotedString(VarEstSize)				
+																																Else
+																																	reportLine = "XOR_ARP" & "," & quotedString(strComputer) & "," & quotedString(VarSoftPub) & "," & quotedString(VarSoftProd) & "," & quotedString(VarSoftVer) & "," & quotedString(VarInstDate) & "," & quotedString(VarInstLoc) & "," & quotedString(VarInstSrc) & "," & quotedString(strSubKeyPath) 
+																																End If																																				
+																																lowerReportLine = LCase(reportLine)
+																																If (InStr(lowerReportLine, "hotfix")) Or (InStr(lowerReportLine, "security update")) Or (InStr(lowerReportLine, "runtime")) Or (InStr(lowerReportLine, ".net framework")) Or (InStr(lowerReportLine, "plugin")) Or (InStr(lowerReportLine, "plug-in")) Or (InStr(lowerReportLine, "kb")) Or (InStr(lowerReportLine, "mui")) Or (InStr(lowerReportLine, "proof")) Or (InStr(lowerReportLine, "intel")) Or (InStr(lowerReportLine, "driver")) Or (InStr(lowerReportLine, "redistributable")) Or (InStr(lowerReportLine, "printer")) Or (InStr(lowerReportLine, "service pack")) Or (InStr(lowerReportLine, "java(tm)")) Or (InStr(lowerReportLine, "quick launch")) Or (InStr(lowerReportLine, "msxml")) Or (InStr(lowerReportLine, "hotkey support")) Or (InStr(lowerReportLine, "webfldrs")) Or (InStr(lowerReportLine, "web folders")) Or (InStr(lowerReportLine, "compatibility pack")) Or (InStr(lowerReportLine, "silverlight")) Or (InStr(lowerReportLine, "national languange")) Then
+                                                                                                                                Else
+                                                         	                                                                    Write0(reportLine)
+																																End If
+																																
+																																Exit For				
+																												End If				
+																								Next				
+																								If kwdMatchFlag = 1 Then				
+																								Exit For				
+																								End If				
+																								arrEntryNames(i) = -2				
+																				End If				
+					
+																				VarSoftVer = ""				
+																				VarSoftPub = ""				
+																				VarSoftProd = ""                                              				
+																				VarInstDate = ""                                              				
+																				VarInstLoc = ""                                              				
+																				VarInstSrc = ""                                              				
+																				VarEstSize = ""                                              				
+																End If				
+												Next                      				
+										Else                                        				
+														ReDim arrEntryNames(-1)				
+										End If				
+									Next
+								
+								
+								REM objReg.GetStringValue HKEY_LOCAL_MACHINE, "SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall", "", strValue								
+								REM If strValue <> "" Then
+									strKeyPath = "SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall"				
+									objReg.EnumKey HKEY_LOCAL_MACHINE,strKeyPath,arrSubKeys				
+										For Each SubKey In arrSubKeys				
+											strSubKeyPath = (strKeyPath & "\" & SubKey)				
+											objReg.EnumValues HKEY_LOCAL_MACHINE,strSubKeyPath,arrEntryNames,arrValueTypes				
+											If IsNull(arrEntryNames) = False Then				
+													For i=0 To UBound(arrEntryNames)				
+																	objReg.GetStringValue HKEY_LOCAL_MACHINE, strSubKeyPath, arrEntryNames(i), strValue                                               				
+																	If (arrValueTypes(i)=1) Then                                                                       				
+																					If (InStr(arrEntryNames(i), "Publisher") Or InStr(arrEntryNames(i), "DisplayName")) Then				
+																									For Each objSoftwareKeyword In arrSoftware				
+																													If (InStr(1, LCase(strValue), LCase(objSoftwareKeyword), 1) = 1) Then 				
+																																	kwdMatchFlag = 1				
+																																	intRet1 = objReg.GetStringValue (HKEY_LOCAL_MACHINE, strSubKeyPath, "DisplayName", VarSoftProd)
+																																
+																																If intRet1 = 0 Then
+																																objReg.GetStringValue HKEY_LOCAL_MACHINE, strSubKeyPath, "DisplayName", VarSoftProd
+																																Else
+																																Exit For
+																																End If
+																																
+																																intRet2 = objReg.GetStringValue (HKEY_LOCAL_MACHINE, strSubKeyPath, "DisplayVersion", VarSoftVer)
+																																If intRet2 = 0 Then
+																																objReg.GetStringValue HKEY_LOCAL_MACHINE, strSubKeyPath, "DisplayVersion", VarSoftVer				
+																																Else
+																																VarSoftVer=""
+																																End If
+																																
+																																intRet3 = objReg.GetStringValue (HKEY_LOCAL_MACHINE, strSubKeyPath, "Publisher", VarSoftPub)		
+																																If intRet3 = 0 Then
+																																objReg.GetStringValue HKEY_LOCAL_MACHINE, strSubKeyPath, "Publisher", VarSoftPub				
+																																Else
+																																VarSoftPub=""
+																																End If
+																																
+																																intRet4 = objReg.GetStringValue (HKEY_LOCAL_MACHINE, strSubKeyPath, "InstallDate", VarInstDate)
+																																If intRet4 = 0 Then
+																																objReg.GetStringValue HKEY_LOCAL_MACHINE, strSubKeyPath, "InstallDate", VarInstDate				
+																																Else
+																																VarInstDate=""
+																																End If
+																																
+																																intRet5 = objReg.GetStringValue (HKEY_LOCAL_MACHINE, strSubKeyPath, "InstallLocation", VarInstLoc)
+																																If intRet5 = 0 Then
+																																objReg.GetStringValue HKEY_LOCAL_MACHINE, strSubKeyPath, "InstallLocation", VarInstLoc
+																																Else
+																																VarInstLoc=""
+																																End If
+																																
+																																intRet6 = objReg.GetStringValue (HKEY_LOCAL_MACHINE, strSubKeyPath, "InstallSource", VarInstSrc)                                                                                                                                              
+																																If intRet6 = 0 Then
+																																objReg.GetStringValue HKEY_LOCAL_MACHINE, strSubKeyPath, "InstallSource", VarInstSrc
+																																Else
+																																VarInstSrc=""
+																																End If
+																																                                                                                                                                             
+																																	If Not IsNull (VarInstLoc) Then
+																																		Set oFolder = objFSO.GetFolder(VarInstLoc)																																					
+																																		VarEstSize = oFolder.Size																																		
+																																	reportLine = "XOR_ARP" & "," & quotedString(strComputer) & "," & quotedString(VarSoftPub) & "," & quotedString(VarSoftProd) & "," & quotedString(VarSoftVer) & "," & quotedString(VarInstDate) & "," & quotedString(VarInstLoc) & "," & quotedString(VarInstSrc) & "," & quotedString(strSubKeyPath) & "," & quotedString(VarEstSize)				
+																																Else
+																																	reportLine = "XOR_ARP" & "," & quotedString(strComputer) & "," & quotedString(VarSoftPub) & "," & quotedString(VarSoftProd) & "," & quotedString(VarSoftVer) & "," & quotedString(VarInstDate) & "," & quotedString(VarInstLoc) & "," & quotedString(VarInstSrc) & "," & quotedString(strSubKeyPath) 
+																																	End If																																				
+																															    lowerReportLine = LCase(reportLine)
+																																If (InStr(lowerReportLine, "hotfix")) Or (InStr(lowerReportLine, "security update")) Or (InStr(lowerReportLine, "runtime")) Or (InStr(lowerReportLine, ".net framework")) Or (InStr(lowerReportLine, "plugin")) Or (InStr(lowerReportLine, "plug-in")) Or (InStr(lowerReportLine, "kb")) Or (InStr(lowerReportLine, "mui")) Or (InStr(lowerReportLine, "proof")) Or (InStr(lowerReportLine, "intel")) Or (InStr(lowerReportLine, "driver")) Or (InStr(lowerReportLine, "redistributable")) Or (InStr(lowerReportLine, "printer")) Or (InStr(lowerReportLine, "service pack")) Or (InStr(lowerReportLine, "java(tm)")) Or (InStr(lowerReportLine, "quick launch")) Or (InStr(lowerReportLine, "msxml")) Or (InStr(lowerReportLine, "hotkey support")) Or (InStr(lowerReportLine, "webfldrs")) Or (InStr(lowerReportLine, "web folders")) Or (InStr(lowerReportLine, "compatibility pack")) Or (InStr(lowerReportLine, "silverlight")) Or (InStr(lowerReportLine, "national languange")) Then
+                                                                                                                                Else
+                                                         	                                                                    Write0(reportLine)
+																																End If				
+																																	Exit For				
+																													End If				
+																									Next				
+																									If kwdMatchFlag = 1 Then				
+																									Exit For				
+																									End If				
+																									arrEntryNames(i) = -2				
+																					End If				
+						
+																					VarSoftVer = ""				
+																					VarSoftPub = ""				
+																					VarSoftProd = ""                                              				
+																					VarInstDate = ""                                              				
+																					VarInstLoc = ""                                              				
+																					VarInstSrc = ""                                              				
+																					VarEstSize = ""                                              				
+																	End If				
+													Next                      				
+											Else                                        				
+															ReDim arrEntryNames(-1)				
+											End If				
+										Next
+								REM End If
+								
+		objReg.EnumKey HKEY_USERS,"",arrHKUUserKeys
+		For Each UserKey In arrHKUUserKeys
+			strKeyPath = UserKey & "\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall"
+			objReg.EnumKey HKEY_USERS,strKeyPath,arrSubKeys
+
+			'----- Cycle through HKU uninstall keys -----
+			For Each SubKey In arrSubKeys
+
+				strSubKeyPath = (strKeyPath & "\" & SubKey)
+				objReg.EnumValues HKEY_USERS,strSubKeyPath,arrEntryNames,arrValueTypes
+
+				If IsNull(arrEntryNames) = False Then
+
+					For i=0 To UBound(arrEntryNames)
+
+						If (arrValueTypes(i)=1) Then
+							objReg.GetStringValue HKEY_USERS,strSubKeyPath,arrEntryNames(i),strValue
+
+							If (InStr(arrEntryNames(i), "Publisher")) Or (InStr(arrEntryNames(i), "DisplayName")) Then
+
+								For Each objSoftwareKeyword In arrSoftware
+
+									If (InStr(1, LCase(strValue), LCase(objSoftwareKeyword), 1) = 1) Then
+										intRet1 = objReg.GetStringValue (HKEY_USERS, strSubKeyPath, "DisplayName", VarSoftProd)
+																																
+																																If intRet1 = 0 Then
+																																objReg.GetStringValue HKEY_USERS, strSubKeyPath, "DisplayName", VarSoftProd
+																																Else
+																																Exit For
+																																End If
+																																
+																																intRet2 = objReg.GetStringValue (HKEY_USERS, strSubKeyPath, "DisplayVersion", VarSoftVer)
+																																If intRet2 = 0 Then
+																																objReg.GetStringValue HKEY_USERS, strSubKeyPath, "DisplayVersion", VarSoftVer				
+																																Else
+																																VarSoftVer=""
+																																End If
+																																
+																																intRet3 = objReg.GetStringValue (HKEY_USERS, strSubKeyPath, "Publisher", VarSoftPub)		
+																																If intRet3 = 0 Then
+																																objReg.GetStringValue HKEY_USERS, strSubKeyPath, "Publisher", VarSoftPub				
+																																Else
+																																VarSoftPub=""
+																																End If
+																																
+																																intRet4 = objReg.GetStringValue (HKEY_USERS, strSubKeyPath, "InstallDate", VarInstDate)
+																																If intRet4 = 0 Then
+																																objReg.GetStringValue HKEY_USERS, strSubKeyPath, "InstallDate", VarInstDate				
+																																Else
+																																VarInstDate=""
+																																End If
+																																
+																																intRet5 = objReg.GetStringValue (HKEY_USERS, strSubKeyPath, "InstallLocation", VarInstLoc)
+																																If intRet5 = 0 Then
+																																objReg.GetStringValue HKEY_USERS, strSubKeyPath, "InstallLocation", VarInstLoc
+																																Else
+																																VarInstLoc=""
+																																End If
+																																
+																																intRet6 = objReg.GetStringValue (HKEY_USERS, strSubKeyPath, "InstallSource", VarInstSrc)                                                                                                                                              
+																																If intRet6 = 0 Then
+																																objReg.GetStringValue HKEY_USERS, strSubKeyPath, "InstallSource", VarInstSrc
+																																Else
+																																VarInstSrc=""
+																																End If
+										
+										reportLine = "XOR_ARP" & "," & quotedString(strComputer) & "," & quotedString("HKU\" & strSubKeyPath) & "," & _
+										quotedString(VarSoftName) & "," & quotedString(VarSoftVer) & "," & quotedString(VarInstDate) & _
+										"," & quotedString(VarSoftPub)& "," & quotedString(VarInstLoc)& "," & quotedString(VarInstSrc)
+
+
+										lowerReportLine = LCase(reportLine)
+																																If (InStr(lowerReportLine, "hotfix")) Or (InStr(lowerReportLine, "security update")) Or (InStr(lowerReportLine, "runtime")) Or (InStr(lowerReportLine, ".net framework")) Or (InStr(lowerReportLine, "plugin")) Or (InStr(lowerReportLine, "plug-in")) Or (InStr(lowerReportLine, "kb")) Or (InStr(lowerReportLine, "mui")) Or (InStr(lowerReportLine, "proof")) Or (InStr(lowerReportLine, "intel")) Or (InStr(lowerReportLine, "driver")) Or (InStr(lowerReportLine, "redistributable")) Or (InStr(lowerReportLine, "printer")) Or (InStr(lowerReportLine, "service pack")) Or (InStr(lowerReportLine, "java(tm)")) Or (InStr(lowerReportLine, "quick launch")) Or (InStr(lowerReportLine, "msxml")) Or (InStr(lowerReportLine, "hotkey support")) Or (InStr(lowerReportLine, "webfldrs")) Or (InStr(lowerReportLine, "web folders")) Or (InStr(lowerReportLine, "compatibility pack")) Or (InStr(lowerReportLine, "silverlight")) Or (InStr(lowerReportLine, "national languange")) Then
+                                                                                                                                Else
+                                                         	                                                                    Write0(reportLine)
+																																End If
+
+
+										Exit For
+
+									End If
+
+								Next
+
+								arrEntryNames(i) = -2
+
+							End If
+
+						End If
+
+					Next
+
+				Else
+
+					ReDim arrEntryNames(-1)
+
+				End If
+
+			Next
+		Next
+
+								
+								
+								
+                                If supressEchos <> 1 Then				
+                                WScript.Echo " ARP Scan: OK"				
+                                End If                    				
+                                Set objReg = Nothing				
+                End If    				
+End Sub			
+
+Sub OS(strComputer)				
+                Err.Clear				
+                On Error Resume Next				
+                Set objWMIService = GetObject("winmgmts:" & "{impersonationLevel=impersonate}!\\" & strComputer & "\root\cimv2")				
+                If Err.Number<>0 Then				
+                                If supressEchos <> 1 Then				
+                                WScript.Echo " OS Scan: Error"				
+                                End If				
+                                Write0("[LOG-STATUS]" & "," & quotedString(strComputer) & "," & "Error " & Err.Number & " - " & Err.Description & "," & "OS Scan: Failed")				
+                                Err.Clear				
+                Else				
+                                Set colItems = objWMIService.ExecQuery("Select * from Win32_OperatingSystem")				
+                                For Each objItem In colItems				
+                                                Platform = objItem.Caption				
+                                                reportLine = "XOR_OS" & "," & quotedString(strComputer) & "," & quotedString(Platform)				
+                                                Write0(reportLine)				
+                                                Set Platform = Nothing				
+                                Next				
+                                If supressEchos <> 1 Then				
+                                WScript.Echo " OS Scan: OK"				
+                                End If				
+                                Set objWMIService = Nothing				
+                End If				
+End Sub				
+Sub GetServices(strComputer)				
+                Err.Clear				
+                On Error Resume Next				
+                Set objWMIService = GetObject("winmgmts:" & "{impersonationLevel=impersonate}!\\" & strComputer & "\root\cimv2")				
+                If Err.Number<>0 Then				
+                                If supressEchos <> 1 Then				
+                                WScript.Echo " Services Scan: Error"				
+                                End If				
+                                Write0("[LOG-STATUS]" & "," & quotedString(strComputer) & "," & "Error " & Err.Number & " - " & Err.Description & "," & "Services Scan: Failed")				
+                                Err.Clear				
+                Else				
+                                Set colRunningServices = objWMIService.ExecQuery ("Select * from Win32_Service")				
+                                For Each objService In colRunningServices				
+                                                For Each objSoftwareKeyword In arrSoftware				
+                                                                If InStr(1, LCase(objService.DisplayName), LCase(objSoftwareKeyword), 1) Then				
+                                                                                i=0
+																				For Each servExclude In arrServExclude
+																					If InStr(1, LCase(objService.DisplayName), LCase(Trim(servExclude)), 1) Then
+																						i=i+1
+																						Exit For
+																						End If
+																						
+																				Next
+																				If (i=0) Then
+																				reportLine = "XOR_SERVICES" & "," & quotedString(strComputer) & "," & quotedString(objService.DisplayName) & "," & quotedString(objService.State)				
+                                                                                Write0(reportLine)	
+																				End If
+                                                                                Exit For				
+                                                                End If				
+                                                Next         				
+                                Next				
+                                If supressEchos <> 1 Then				
+                                WScript.Echo " Services Scan: OK"				
+                                End If				
+                End If				
+                Set objWMIService=Nothing				
+End Sub				
+Sub GetRunningProcess (strComputer)				
+                Err.Clear				
+                On Error Resume Next				
+                Set objWMIService = GetObject("winmgmts:" & "{impersonationLevel=impersonate}!\\" & strComputer & "\root\cimv2")				
+                If Err.Number<>0 Then				
+                                If supressEchos <> 1 Then				
+                                WScript.Echo " Process Scan: Error"				
+                                End If				
+                                Write0("[LOG-STATUS]" & "," & quotedString(strComputer) & "," & "Error " & Err.Number & " - " & Err.Description & "," & "Process Scan: Failed")				
+                                Err.Clear                               				
+                Else        				
+                                Set colProcessList = objWMIService.ExecQuery ("Select * from Win32_Process")                              				
+                                For Each objProcess In colProcessList				
+                                                For Each objSoftwareKeyword In arrSoftware				
+                                                                If InStr(LCase(objProcess.Name), LCase(objSoftwareKeyword)) Or InStr(LCase(objProcess.Description), LCase(objSoftwareKeyword)) Or InStr(LCase(objProcess.ExecutablePath), LCase(objSoftwareKeyword))Then                                            				
+                                                                               i = 0
+																				For Each procExclude In arrProcExclude
+																					
+																						If InStr(LCase(objProcess.Name), LCase(Trim(procExclude))) Or InStr(LCase(objProcess.Description), LCase(Trim(procExclude))) Or InStr(LCase(objProcess.ExecutablePath), LCase(Trim(procExclude)))Then                                            				
+																						i = i+1
+																						Exit For
+																						End If
+																						
+																				Next
+																				If (i=0) Then
+																				reportLine = "XOR_PROCESSES" & "," & quotedString(strComputer) & "," & quotedString(objProcess.Name) & "," & quotedString(objProcess.Description) & "," & quotedString(objProcess.ExecutablePath) 				
+                                                                                Write0(reportLine)	
+																				End If
+																				Exit For				
+                                                                End If				
+                                                Next				
+                                Next				
+                                If supressEchos <> 1 Then				
+                                WScript.Echo " Process Scan: OK"				
+                                End If				
+                End If				
+                Set objWMIService=Nothing       				
+End Sub	
+			
+Sub RegDeepScan (RegRoot, arrReg, strComputer)				
+                Err.Clear				
+                On Error Resume Next				
+                Set objReg = GetObject("winmgmts:" & "{impersonationLevel=impersonate}!\\" & strComputer & "\root\default:StdRegProv")				
+                If Err.Number<>0 Then				
+                                Write1("[LOG-STATUS]" & "," & quotedString(strComputer) & "," & "Error " & Err.Number & " - " & Err.Description & "," & "Registry Scan: Failed")				
+                                Err.Clear				
+                Else				
+                                For Each regEntry In arrReg				
+                                                EnumKey RegRoot,regEntry,strComputer,objReg				
+                                Next				
+                                If supressEchos <> 1 Then				
+                                WScript.Echo " Registry Deep Scan: OK"				
+                                End If				
+                End If				
+                Set objReg = Nothing	
+                
+End Sub
+
+				
+Sub EnumKey (RegRoot, sPath, strComputer, objReg)				
+                On Error Resume Next				
+                Dim sKeys				
+                Dim SubKeyCount				
+                Dim objRegistry				
+                Dim lRC				
+                Dim Key				
+                lRC = objReg.EnumKey(RegRoot, sPath, sKeys)	
+				reportLine = "XOR_REGDS" & "," & quotedString(strComputer) & "," & quotedString(sPath) & "," & quotedString(sKeys)	
+				If IsNull(sKeys) = False Then 
+			    Write1(reportLine)
+				End If
+				
+				
+                objReg.EnumValues RegRoot,sPath,arrEntryNames,arrValueTypes				
+                If IsNull(arrEntryNames) = False Then				
+                                For i=0 To UBound(arrEntryNames)				
+                                              If (arrValueTypes(i)=1) Then				
+                                                                objReg.GetStringValue RegRoot, sPath, arrEntryNames(i), strValue				
+                                                                				
+                                                                                strValue = Replace(strValue,",","")				
+                                                                                strValue = Replace(strValue,"?","")				
+                                                                                strValue = Replace(strValue,"#","")				
+                                                                                strValue = Replace(strValue,"*","")	
+																				
+                                                                                reportLine = "XOR_REGDS" & "," & quotedString(strComputer) & "," & quotedString(sPath) & "," & quotedString(arrEntryNames(i)) & "," & quotedString(strValue)				
+																				If IsNull(strValue) = False Then	
+																				Write1(reportLine)	
+																				End If
+																				
+                                                                				
+                                              End If				
+                                                strValue = ""                                      				
+                                Next				
+                Else				
+                                ReDim arrEntryNames(-1)				
+                End If    				
+                If IsArray(sKeys) Then				
+                                For Each Key In sKeys                                                                                     				
+									newKey = sPath & "\" & Key
+									i=0
+									For Each regExclude In arrRegExclude
+										If InStr(LCase(newKey),LCase(regExclude)) Then
+										i = i + 1
+										Exit For
+										End If	
+									Next
+									If (i=0) Then
+									EnumKey RegRoot, newKey, strComputer, objReg
+									End If
+								Next				
+                End If				
+End Sub	
+			
+			
+Function quotedString (inString)                               				
+                inString=Replace(inString,Chr(34),"")
+				quotedString = Chr(34) & Trim(inString) & Chr(34)				
+End Function				
+
+Sub InstPrograms_Events(strHostName)				
+                Err.Clear				
+                On Error Resume Next				
+                Set objWMIService = GetObject("winmgmts:{impersonationLevel=impersonate}!\\" & strHostName & "\root\cimv2")				
+                Set colEvents = objWMIService.ExecQuery("Select * from Win32_NTLogEvent Where LogFile='Application' And EventCode='11728'")				
+                If Err.Number<>0 Then				
+                                If supressEchos <> 1 Then				
+                                WScript.Echo " Installed-Softwares Scan: Error"				
+                                End If				
+                                Write0("[LOG-STATUS]" & "," & quotedString(strHostName) & "," & "Error " & Err.Number & " - " & Err.Description & "," & "Installed-Softwares Scan: Failed")				
+                                Err.Clear				
+                Else				
+                sTmp = ""				
+                For Each objEvent In colEvents				
+                                strDescription = objEvent.Message				
+								If IsNull(objEvent.User) Then
+								strUser = "User not found"
+								Else
+								strUser = objEvent.User
+								End If
+								
+								If IsNull(strDescription) Then				
+                                                strDescription = "The event description cannot be found."				
+                                Else				
+                                                For Each objSoftwareKeyword In arrSoftware				
+                                                                If InStr(LCase(strDescription), LCase(objSoftwareKeyword)) Then                                              				
+                                                                                strTimeWritten = objEvent.TimeWritten				
+                                                                                dtmTimeWritten = CDate(Mid(strTimeWritten, 5, 2) & "/" & _				
+                                                                                                Mid(strTimeWritten, 7, 2) & "/" & Left(strTimeWritten, 4) _				
+                                                                                                                & " " & Mid (strTimeWritten, 9, 2) & ":" & _				
+                                                                                                                                Mid(strTimeWritten, 11, 2) & ":" & Mid(strTimeWritten, 13, 2))				
+                                                                                dtmDate = FormatDateTime(dtmTimeWritten, vbShortDate)				
+                                                                                dtmTime = FormatDateTime(dtmTimeWritten, vbLongTime)				
+                                                                                strEvent = quotedString(dtmDate) & "," & quotedString(dtmTime)	
+																				strEvent = "Inst-Soft" & "," & quotedString(strHostName) & "," & strEvent & "," & quotedString(strDescription) & "," & quotedString(strUser)
+																				
+																				Write0(strEvent) 		
+																			
+                                                                Exit For				
+                                                                End If				
+                                                Next				
+                                End If				
+                Next				
+              			
+				
+                End If    	
+WScript.Echo" ProInst Scan: OK"				
+End Sub	
+
+
+Sub UninstalledPrograms_Events(strHostName)				
+                Err.Clear				
+                On Error Resume Next				
+                Set objWMIService = GetObject("winmgmts:{impersonationLevel=impersonate}!\\" & strHostName & "\root\cimv2")				
+                Set colEvents = objWMIService.ExecQuery("Select * from Win32_NTLogEvent Where LogFile='Application' And EventCode='11724'")				
+                If Err.Number<>0 Then				
+                                If supressEchos <> 1 Then				
+                                WScript.Echo " Uninstalled-Softwares Scan: Error"				
+                                End If				
+                                Write0("[LOG-STATUS]" & "," & quotedString(strHostName) & "," & "Error " & Err.Number & " - " & Err.Description & "," & "Uninstalled-Softwares Scan: Failed")				
+                                Err.Clear				
+                Else				
+                sTmp = ""				
+                For Each objEvent In colEvents				
+                                strDescription = objEvent.Message
+								If IsNull(objEvent.User) Then
+								strUser = "User not found"
+								Else
+								strUser = objEvent.User
+								End If								
+                                If IsNull(strDescription) Then				
+                                                strDescription = "The event description cannot be found."				
+                                Else				
+                                                For Each objSoftwareKeyword In arrSoftware				
+                                                                If InStr(LCase(strDescription), LCase(objSoftwareKeyword)) Then                                              				
+                                                                                strTimeWritten = objEvent.TimeWritten				
+                                                                                dtmTimeWritten = CDate(Mid(strTimeWritten, 5, 2) & "/" & _				
+                                                                                                Mid(strTimeWritten, 7, 2) & "/" & Left(strTimeWritten, 4) _				
+                                                                                                                & " " & Mid (strTimeWritten, 9, 2) & ":" & _				
+                                                                                                                                Mid(strTimeWritten, 11, 2) & ":" & Mid(strTimeWritten, 13, 2))				
+                                                                                dtmDate = FormatDateTime(dtmTimeWritten, vbShortDate)				
+                                                                                dtmTime = FormatDateTime(dtmTimeWritten, vbLongTime)				
+																				strEvent = quotedString(dtmDate) & "," & quotedString(dtmTime)	
+																				strEvent = "UnInst-Soft" & "," & quotedString(strHostName) & "," & strEvent & "," & quotedString(strDescription) & "," & quotedString(strUser)
+																				
+																				Write0(strEvent) 			
+                                                                Exit For				
+                                                                End If				
+                                                Next				
+                                End If				
+                Next				
+            					
+				
+                End If    				
+				
+    WScript.Echo" ProUnInst Scan: OK"	
+End Sub	
+
+
+Sub EventLogClear_Events(strHostName)				
+                Err.Clear				
+                On Error Resume Next				
+                Set objWMIService = GetObject("winmgmts:{impersonationLevel=impersonate}!\\" & strHostName & "\root\cimv2")				
+                Set colEvents = objWMIService.ExecQuery("Select * from Win32_NTLogEvent Where LogFile='System' And EventCode='1102' Or EventCode='517' Or EventCode='104'")				
+                If Err.Number<>0 Then				
+                                If supressEchos <> 1 Then				
+                                WScript.Echo " Uninstalled-Softwares Scan: Error"				
+                                End If				
+                                Write0("[LOG-STATUS]" & "," & quotedString(strHostName) & "," & "Error " & Err.Number & " - " & Err.Description & "," & "Uninstalled-Softwares Scan: Failed")				
+                                Err.Clear				
+                Else				
+                sTmp = ""				
+                For Each objEvent In colEvents				
+                                strDescription = objEvent.Message
+								If IsNull(objEvent.User) Then
+								strUser = "User not found"
+								Else
+								strUser = objEvent.User
+								End If								
+                                If IsNull(strDescription) Then				
+                                                strDescription = "The event description cannot be found."				
+                                Else				
+                                                'For Each objSoftwareKeyword in arrSoftware				
+                                                                'If InStr(LCase(strDescription), LCase(objSoftwareKeyword)) Then                                              				
+                                                                                strTimeWritten = objEvent.TimeWritten				
+                                                                                dtmTimeWritten = CDate(Mid(strTimeWritten, 5, 2) & "/" & _				
+                                                                                                Mid(strTimeWritten, 7, 2) & "/" & Left(strTimeWritten, 4) _				
+                                                                                                                & " " & Mid (strTimeWritten, 9, 2) & ":" & _				
+                                                                                                                                Mid(strTimeWritten, 11, 2) & ":" & Mid(strTimeWritten, 13, 2))				
+                                                                                dtmDate = FormatDateTime(dtmTimeWritten, vbShortDate)				
+                                                                                dtmTime = FormatDateTime(dtmTimeWritten, vbLongTime)				
+																				strEvent = quotedString(dtmDate) & "," & quotedString(dtmTime)	
+																				strEvent = "XOR_EventStatus" & "," & quotedString(strHostName) & "," & strEvent & "," & quotedString(strDescription) & "," & quotedString(strUser)
+																				
+																				Write0(strEvent) 			
+                                                                'Exit For				
+                                                                'End If				
+                                                'Next				
+                                End If				
+                Next				
+            					
+				
+                End If    				
+				
+    WScript.Echo" Log Status: OK"	
+End Sub		
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+
+Sub FileUsageScan (strComputer)
+	
+	 Set objReg = GetObject("winmgmts:" & "{impersonationLevel=impersonate}!\\" & strComputer & "\root\default:StdRegProv")				
+	
+	strRegPath = "Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist"
+	objReg.EnumKey HKEY_USERS, "", arrSIDkeys
+		If TypeName(arrSIDkeys) <> "Null" Then
+			For Each objSIDKey In arrSIDkeys
+				If Len(objSIDKey) > 8 And InStr(objSIDKey, "Classes") = 0 Then
+				Write2("XOR_File-UsageReport"  & "," & "Hostname" & "," & "FileName" & "," & "Times Executed" & "," & "Focus Count" & "," & "Focus Time"  & "," & "Last Run Time"  & "," & "Unknown XP Value")
+					' Enumerate through the UserAssist key for this SID
+					ReadValuesRecursively HKEY_USERS, objSIDKey & "\" & strRegPath
+					
+				End If
+			Next
+		End If
+		
+	 WScript.Echo " File1 Scan: OK"	
+End Sub
+
+Sub ReadValuesRecursively(strRoot, strRegKeyPath)
+	EnumRegValues strRoot, strRegKeyPath
+	objReg.EnumKey strRoot, strRegKeyPath, arrSubKeys
+	
+	If TypeName(arrSubkeys) <> "Null" Then
+		For Each objSubkey In arrSubKeys
+			ReadValuesRecursively strRoot, strRegKeyPath & "\" & objSubkey
+			
+		Next
+	End If
+	
+	
+End Sub
+
+Sub EnumRegValues(strRootPath, strPath)
+	FiletagInclusion = 0
+	objReg.EnumValues strRootPath, strPath, arrValueNames, arrValueTypes
+	
+	If TypeName(arrValueNames) <> "Null" Then
+		For intVal = LBound(arrValueNames) To UBound(arrValueNames)
+			
+		    Select Case arrValueTypes(intVal)
+				Case REG_BINARY
+					
+					objReg.GetBinaryValue strRootPath, strPath, arrValueNames(intVal), arrValue
+					
+					If UBound(arrValue) <= 15 Then
+					
+							strValueName = rot13(arrValueNames(intVal))
+							
+							StrUAFilePath = strPath & "\" & strValueName
+							StrUAFilename = strValueName
+							
+							'Comparing with FileNames
+							For Each strFileName In arrSoftware
+									
+										If InStr(StrUAFilePath,strFileName) Then 
+										
+										FiletagInclusion = 1
+										strUnknown = 0
+										strHex = ""
+										For i = 3 To 0 Step -1
+											strHex = strHex & Right("0" & Hex(arrValue(i)), 2)
+										Next
+										strUnknown = Eval("&H" & strHex)
+										StrUAXPU = strUnknown
+										'outLocalFile0.writeline "Unknown Value (Win XP): " & strUnknown
+																
+										' Extact the times executed value
+										strTimesExecuted = 0
+										strHex = ""
+										For i = 7 To 4 Step -1
+											strHex = strHex & Right("0" & Hex(arrValue(i)), 2)
+										Next
+										strTimesExecuted = Eval("&H" & strHex)
+										' Times Executed appears to start at 5, so a value of 6 means it was executed once
+										strTimesExecuted = strTimesExecuted - 5
+										StrUATimesExecuted = strTimesExecuted
+										'outLocalFile0.writeline "Times Executed = " & strTimesExecuted
+										
+										' Two other spacers for the Win 7 values that don't exist in this value
+										'outLocalFile0.writeline "<td>N/A</td><td>N/A</td>"
+
+										' Extact the little endian time stamp value
+										If UBound(arrValue) >= 15 Then
+											strTimeStamp = ""
+											For intBit = 8 To 15
+												If strTimeStamp = "" Then
+													strTimeStamp = arrValue(intBit)
+												Else
+													strTimeStamp = strTimeStamp & "," & arrValue(intBit)
+												End If
+											Next
+										End If
+										
+										'outLocalFile0.writeline "Time Stamp Array Values: " & strTimeStamp
+										If Trim(strTimeStamp) <> "" Then
+											If strTimeStamp <> "0,0,0,0,0,0,0,0" Then
+												strLittleEndianTimeStamp = FormatNumber(littleEndian(Split(strTimeStamp, ",")), 0, 0, 0, 0)
+												'outLocalFile0.writeline "Little Endian Conversion: " & strLittleEndianTimeStamp
+												Set objDateTime = CreateObject("WbemScripting.SWbemDateTime")
+												On Error Resume Next
+												Call objDateTime.SetFileTime(strLittleEndianTimeStamp, False)
+												strConvertedTimeStamp = objDateTime.GetVarDate
+												If Err.Number = 0 Then
+													strUALastRun = strConvertedTimeStamp
+													'outLocalFile0.writeline "Little Endian Time Stamp = " & strConvertedTimeStamp
+													
+												Else
+													strUALastRun = strTimeStamp
+													'outLocalFile0.writeline "Error translating time from value of " & strTimeStamp
+													
+												End If
+											Else
+											
+												strUALastRun = "Time stamp is blank"
+																		
+											End If
+										End If
+								End If
+							Next
+					Else
+								
+								strValueName = rot13(arrValueNames(intVal))
+								StrUAFilePath = strPath & "\" & strValueName
+								StrUAFilename = strValueName 
+								For Each strFileName In arrSoftware
+									
+										If InStr(StrUAFilePath,strFileName) Then
+												FiletagInclusion = 1			
+												REM If Instr(StrUAFilePath,"license") then 
+												REM wscript.echo "Name:" & strValueName & "ROT13" & arrValueNames(intVal) 
+												REM End If
+												'outLocalFile0.writeline "Path: " & strPath & "\" & strValueName
+												
+												'outLocalFile0.writeline "Data Type: Binary"
+												'outLocalFile0.writeline "Data Value (Decimal): " & Join(arrValue, ",")
+												
+												' A spacer for the Win XP value that don't exist in this value
+												
+
+												' Extact the times executed value
+												strTimesExecuted = 0
+												strHex = ""
+												For i = 7 To 4 Step -1
+													strHex = strHex & Right("0" & Hex(arrValue(i)), 2)
+												Next
+												strTimesExecuted = Eval("&H" & strHex)
+												StrUATimesExecuted = strTimesExecuted
+												'outLocalFile0.writeline "Times Executed = " & strTimesExecuted
+												
+							
+												' Extact the focus count value
+												strFocusCount = 0
+												If UBound(arrValue) >= 11 Then
+													strHex = ""
+													For i = 11 To 8 Step -1
+														strHex = strHex & Right("0" & Hex(arrValue(i)), 2)
+													Next
+													strFocusCount = Eval("&H" & strHex)
+												End If
+												StrUAFocusC = strFocusCount
+												'outLocalFile0.writeline "Focus Count = " & strFocusCount
+												
+							
+												' Extact the focus time value
+												strFocusTime = 0
+												If UBound(arrValue) >= 15 Then
+													strHex = ""
+													For i = 15 To 12 Step -1
+														strHex = strHex & Right("0" & Hex(arrValue(i)), 2)
+													Next
+													strFocusTime = Eval("&H" & strHex)
+												End If
+												StrUAFocusT = strFocusTime
+												'outLocalFile0.writeline "Focus Time = " & strFocusTime
+												
+							
+												' Extact the little endian time stamp value
+												If UBound(arrValue) >= 67 Then
+													strTimeStamp = ""
+													For intBit = 60 To 67
+														If strTimeStamp = "" Then
+															strTimeStamp = arrValue(intBit)
+														Else
+															strTimeStamp = strTimeStamp & "," & arrValue(intBit)
+														End If
+													Next
+												End If
+												
+												'outLocalFile0.writeline "Time Stamp Array Values: " & strTimeStamp
+												If Trim(strTimeStamp) <> "" Then
+													If strTimeStamp <> "0,0,0,0,0,0,0,0" Then
+														strLittleEndianTimeStamp = FormatNumber(littleEndian(Split(strTimeStamp, ",")), 0, 0, 0, 0)
+														'outLocalFile0.writeline "Little Endian Conversion: " & strLittleEndianTimeStamp
+														Set objDateTime = CreateObject("WbemScripting.SWbemDateTime")
+														On Error Resume Next
+														Call objDateTime.SetFileTime(strLittleEndianTimeStamp, False)
+														strConvertedTimeStamp = objDateTime.GetVarDate
+														If Err.Number = 0 Then
+															strUALastRun =  strConvertedTimeStamp
+															
+														Else
+															strUALastRun = strTimeStamp
+															'outLocalFile0.writeline "Error translating time from value of " & strTimeStamp
+															
+														End If
+													Else
+															strUALastRun = "Time stamp is blank"
+															'outLocalFile0.writeline "Time stamp is blank"
+														
+													End If
+												End If
+							End If	
+						Next		
+					End If
+			If FiletagInclusion Then
+			
+			reportLine = "XOR_File-UsageReport" & "," & quotedString(strHostname) & "," & quotedString(StrUAFileName)  & "," & quotedString(StrUATimesExecuted) & "," & quotedString(StrUAFocusC) & "," & quotedString(StrUAFocusT)  & "," & quotedString(strUALastRun)  & "," & quotedString(StrUAXPU)
+			lowerReportLine = LCase(reportLine)
+			    If (InStr(lowerReportLine, "microsoft")) Then
+			Write2(reportLine)
+			FiletagInclusion = 0
+			     End If
+			End If
+			End Select
+		Next
+	End If
+End Sub
+
+Function rot13(rot13text)
+	
+	rot13text_rotated = "" ' the function will return this String
+	For i = 1 To Len(rot13text)
+		j = Mid(rot13text, i, 1) ' take the next character in the String
+		k = Asc(j) ' find out the character code
+		If k >= 97 And k =< 109 Then
+			k = k + 13 ' a ... m inclusive become n ... z
+		ElseIf k >= 110 And k =< 122 Then
+			k = k - 13 ' n ... z inclusive become a ... m
+		ElseIf k >= 65 And k =< 77 Then
+			k = k + 13 ' A ... m inclusive become n ... z
+		ElseIf k >= 78 And k =< 90 Then
+			k = k - 13 ' N ... Z inclusive become A ... M
+		End If
+		'add the current character to the string returned by the Function
+		rot13text_rotated = rot13text_rotated & Chr(k)
+	Next
+	rot13 = rot13text_rotated
+End Function
+
+Function littleEndian(strValue)
+	For i = LBound(strValue) To UBound(strValue) 
+		oValue = oValue + (256^i)*strValue(i)
+	Next
+	littleEndian = oValue
+End Function
+
+
+Function SysInstallDate (StrComputer)
+
+	Err.Clear
+
+	On Error Resume Next
+
+'For Each strComputer In arrComputers 
+
+   
+   Set objWMIService = GetObject("winmgmts:" & "{impersonationLevel=impersonate}!\\" & strComputer & "\root\cimv2")      
+  
+	If Err.Number<>0 Then
+	'WScript.Echo " InstallDate Scan: Error"
+		Write0("[REMOVE]" & "," & "Host" & "," & "Error Code" )
+		Write0("XOR_System-InstallDate" & "," & quotedString(strComputer) & "," & "Error " & Err.Number & " - " & Err.Description)
+		Write0("[RESULT]" & "," & quotedString(strComputer) & "," & "InstallDate Scan: Failed")
+		Write0(quotedString(strComputer) & "," & "InstallDate Scan: Failed" & "," & "Error " & Err.Number & " - " & Err.Description)
+		
+		Err.Clear
+		
+	Else
+  
+		Set colItems = objWMIService.ExecQuery("SELECT * FROM Win32_OperatingSystem")    
+		
+		For Each objItem In colItems 	
+		'WScript.Echo "InstallDate: " & WMIDateStringToDate(objItem.InstallDate) 	
+		Write0("XOR_System-InstallDate" & "," & quotedString(strComputer) & "," & WMIDateStringToDate(objItem.InstallDate))	
+		Next
+
+	End If		
+
+'Next 
+
+	Set objWMIService = Nothing
+	'set colItems = Nothing
+	'set objItem = Nothing
+
+	Err.Clear
+	
+End Function				
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Function WMIDateStringToDate(dtmDate) 
+'WScript.Echo dtm: 
+    WMIDateStringToDate = CDate(Mid(dtmDate, 5, 2) & "/" & _ 
+    Mid(dtmDate, 7, 2) & "/" & Left(dtmDate, 4) _ 
+    & " " & Mid (dtmDate, 9, 2) & ":" & Mid(dtmDate, 11, 2) & ":" & Mid(dtmDate,13, 2)) 
+End Function
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Function SystemDate (StrComputer)
+
+	Err.Clear
+
+	On Error Resume Next  
+ 
+	If Err.Number<>0 Then
+	'WScript.Echo " InstallDate Scan: Error"
+		Write0("[REMOVE]" & "," & "Host" & "," & "Error Code" )
+		Write0("XOR_System-Date" & "," & quotedString(strComputer) & "," & "Error " & Err.Number & " - " & Err.Description)
+		Write0("[RESULT]" & "," & quotedString(strComputer) & "," & "InstallDate Scan: Failed")
+		Write0(quotedString(strComputer) & "," & "SystemDate Scan: Failed" & "," & "Error " & Err.Number & " - " & Err.Description)
+		
+		Err.Clear
+		
+	Else
+  
+		Write0 ("XOR_System-Date" & "," & quotedString(strComputer) & "," & Date)	
+		
+	End If		
+	Err.Clear
+	
+End Function
+
+Function String2Asc( strIn)
+  arrResult = Array()
+  ReDim arrResult( CInt( Len( strIn ) ) )
+  For intI = 0 To Len(strIn) - 1
+      arrResult( intI ) = Asc( Mid( strIn,intI + 1 ,1 ) )
+  Next
+  String2Asc = arrResult
+End Function
+
+Function Write0( strEncrypt)
+  Dim strKey
+  Dim intSeed
+  Dim strEncrypted 
+  strKey = "X0R!$k !ntern@L #ncRypt!0n TeCHn!que"
+  intSeed = 1
+  Rnd(-1)
+  Randomize intSeed
+  intRnd =  Int( ( Len(strKey) - 1 + 1 ) * Rnd + 1 )
+  
+  arrEncrypt = String2Asc(strEncrypt)
+  arrKey = String2Asc(strKey)
+  
+  For intI = 0 To UBound( arrEncrypt ) - 1
+      
+      intPointer = intI + intRnd
+      If intPointer > UBound(arrKey) Then
+         intPointer = intPointer -  ((UBound(arrKey) + 1 ) * Int(intPointer / (UBound(arrKey) + 1)))
+      End If
+      
+      intCalc = arrEncrypt(intI) + arrKey(intPointer)
+      
+      If intCalc > 256 Then
+      	intCalc = intCalc - 256 
+      End If
+      strEncrypted = strEncrypted & Chr(intCalc)
+  Next
+  'encrypt = strEncrypted
+  outLocalFile0.writeLine strEncrypted
+End Function
+
+Function Write1( strEncrypt)
+  Dim strKey
+  Dim intSeed
+  Dim strEncrypted 
+  strKey = "X0R!$k !ntern@L #ncRypt!0n TeCHn!que"
+  intSeed = 1
+  Rnd(-1)
+  Randomize intSeed
+  intRnd =  Int( ( Len(strKey) - 1 + 1 ) * Rnd + 1 )
+  
+  arrEncrypt = String2Asc(strEncrypt)
+  arrKey = String2Asc(strKey)
+  
+  For intI = 0 To UBound( arrEncrypt ) - 1
+      
+      intPointer = intI + intRnd
+      If intPointer > UBound(arrKey) Then
+         intPointer = intPointer -  ((UBound(arrKey) + 1 ) * Int(intPointer / (UBound(arrKey) + 1)))
+      End If
+      
+      intCalc = arrEncrypt(intI) + arrKey(intPointer)
+      
+      If intCalc > 256 Then
+      	intCalc = intCalc - 256 
+      End If
+      strEncrypted = strEncrypted & Chr(intCalc)
+  Next
+  'encrypt = strEncrypted
+  outLocalFile1.writeLine strEncrypted
+End Function
+
+Function Write2( strEncrypt)
+  Dim strKey
+  Dim intSeed
+  Dim strEncrypted 
+  strKey = "X0R!$k !ntern@L #ncRypt!0n TeCHn!que"
+  intSeed = 1
+  Rnd(-1)
+  Randomize intSeed
+  intRnd =  Int( ( Len(strKey) - 1 + 1 ) * Rnd + 1 )
+  
+  arrEncrypt = String2Asc(strEncrypt)
+  arrKey = String2Asc(strKey)
+  
+  For intI = 0 To UBound( arrEncrypt ) - 1
+      
+      intPointer = intI + intRnd
+      If intPointer > UBound(arrKey) Then
+         intPointer = intPointer -  ((UBound(arrKey) + 1 ) * Int(intPointer / (UBound(arrKey) + 1)))
+      End If
+      
+      intCalc = arrEncrypt(intI) + arrKey(intPointer)
+      
+      If intCalc > 256 Then
+      	intCalc = intCalc - 256 
+      End If
+      strEncrypted = strEncrypted & Chr(intCalc)
+  Next
+  'encrypt = strEncrypted
+  outLocalFile2.writeLine strEncrypted
+End Function
+
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Function getTimestamp
+		 vNow = Now()
+		 vMthStr = CStr(Month(vNow))
+		 vDayStr = CStr(Day(vNow))
+		 vHourStr = CStr(Hour(vNow))
+		 vMinuteStr = CStr(Minute(vNow))
+		 ' Add leading zeroes to month, day, hour, minutes
+		 If Len(vMthStr) = 1 Then
+			vMthStr = "0" & vMthStr
+		 End If
+		 If Len(vDayStr) = 1 Then
+			vDayStr = "0" & vDayStr
+		 End If
+		 If Len(vHourStr) = 1 Then
+			vHourStr = "0" & vHourStr
+		 End If
+		 If Len(vMinuteStr) = 1 Then
+			vMinuteStr = "0" & vMinuteStr
+		 End If
+		 ' Get date string in yyyymmddhhnn format.
+		getTimestamp = Year(vNow) & vMthStr & vDayStr & vHourStr & vMinuteStr
+End Function
+
+Sub SearchFiles(strComputer)				
+'---------------------- Embed Filenames-----------------------------------------
+ipkey="IPv4"
+'strcontent="FileSearch-Summary.txt"& vbCrLf
+strContent=strContent & "AddCMD: SQLCMD -L"& VbCrLf & _
+"AddCMD: OSQL -L " & VbCrLf & _
+"AddCMD: qwinsta " & VbCrLf & _
+"AddCMD: ipconfig | Find " & quotedString(ipkey) & VbCrLf & _
+"DirProfile: \WINDOWS\Installer\$PatchCache$\Managed\ " & VbCrLf & _
+"DirStructure: \WINDOWS\Installer\$PatchCache$\Managed\ " 
+
+
+arrFilename = Split(strcontent, VbCrLf)	
+'-------------------------Embed filenames End--------------------------
+Err.Clear			
+On Error Resume Next
+If Err.Number<>0 Then
+	Write2("FileDoesNotExist" & "," & strHostName & "," & strFileName & "," & "Error " & Err.Number & " - " & Err.Description & "," & "File Scan: Failed")		
+	Err.Clear
+	On Error Resume Next
+Else	
+	
+	Set Drives = objFSO.Drives 
+	
+	Set oWSH = CreateObject("WScript.Shell")
+	Set objWMIService = GetObject("winmgmts:" & "{impersonationLevel=impersonate}!\\" & strComputer & "\root\cimv2")   
+	For Each strFileName In arrFilename									
+		
+		If InStr(strFileName,"FindProfileUserFiles:") Then
+		
+		
+		'''''''''''''''''''''''' New Addition for Directory Listing''''''''''''''''''''
+			
+			ElseIf InStr(strFileName,"DirProfile:") Then
+			
+			
+			arr1 = Split(strFileName, "DirProfile:")
+			rFolder = Trim(arr1(1))
+			rTempFolders= Split(rFolder,",")
+			reportLine = "XOR_File-Details-Dir" & "," & "Hostname" & "," & "Folder Name" & "," & "File Name" & "," & "File Size" & "," & "Creation Date" & "," & "Modification Date"
+			Write2(reportLine)
+			sProfileRegBase = "SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList"
+					Set oReg = GetObject("winmgmts:{impersonationLevel=impersonate}!//" _
+					& strComputer & "/root/default:StdRegProv")
+					oReg.GetExpandedStringValue HKEY_LOCAL_MACHINE, sProfileRegBase , _
+					"ProfilesDirectory", sProfilesRoot
+					
+					Set objFolder = objFSO.GetFolder(sProfilesRoot)
+						
+						For Each objFol In objFolder.SubFolders
+							For Each rFolder1 In rTempFolders
+											
+								objFolPath=objFol.path & Trim(rFolder1)
+							
+								If objFSO.folderExists(objFolPath) Then
+								Set ParentobjFol=objFSO.GetFolder(objFolPath)									
+								
+								GetDirectoryListing ParentobjFol,strComputer
+						
+								End If
+						Next
+			
+					Next
+			
+			ElseIf InStr(strFileName,"FileSearch-") Then		
+			arrTemp = Split(strFileName, "FileSearch-")(1)
+			
+			arrFileNames = Split(arrTemp,",")
+			Dim sWQL, sQWL, oFile,sFile, sAttrib, strFile, strExt
+			For Each DiskDrive In Drives
+				
+				REM If DiskDrive.DriveType = 2 Or DiskDrive.DriveType = 3 Then
+				If DiskDrive.DriveType = 2 Then
+					 strDrive = DiskDrive.DriveLetter & ":"
+				For Each strFname In arrFileNames
+				
+				If InStr(strFname,".") Then
+									arrFileNameExt = Split (strFname, ".")
+									strFile=arrFileNameExt(0)
+									strExt=arrFileNameExt(1)
+									
+									sWQL = "select FileName,Extension,FileSize,Path,CreationDate,InstallDate,LastAccessed from cim_datafile where Drive='" & strDrive & "' AND FileName='" & _ 
+									strFile & "' AND Extension='" & strExt & "'"
+				Else
+									strFile=strFname
+									strExt=""
+									sWQL = "select FileName,Extension,FileSize,Path,CreationDate,InstallDate,LastAccessed from cim_datafile where Drive='" & strDrive & "' AND FileName='" & _ 
+							strFile & "'"
+				End If
+						
+				If Not strFile="" Then
+					For Each oFile In objWMIService.execquery(sWQL)
+						sFile = strFname
+						sSize = oFile.FileSize
+						sPath = oFile.Path
+						sCreate = oFile.CreationDate
+						sAccess = oFile.LastAccessed
+					
+						sInstallDate = Left(sCreate,InStr(sCreate,".")-7)
+						sAccessedDate = Left(sAccess,InStr(sAccess,".")-7)	
+						sFullPath = strDrive & sPath & sFile
+						If objFSO.FileExists(sFullPath) Then
+							Write2("File-Details" & "," & strComputer & "," & sFullPath & ", Created:" & quotedString(sInstallDate) & ", Modified:" & quotedString(sAccessedDate)) & ", File Size:" & quotedString(sSize)
+						
+							If InStr(sFullPath,".exe") Then
+							
+							ElseIf InStr(sFullPath,".zip") Then
+							
+							Else
+									Set objFilej = objFSO.OpenTextFile(sFullPath, 1)	
+									Do Until objFilej.AtEndOfStream 	
+										Write2("File-Content" & "," & strComputer & "," & quotedString(sFullPath) & "," & quotedString(objFilej.ReadLine))
+									Loop
+									objFilej.close
+							End If
+							
+						End If
+					Next
+				End If
+				
+				
+				
+				Next
+					
+					
+					
+					
+				End If
+			Next
+			
+			
+		'''----------------------------Added - 31-Jul-2012--------------------------------------------------------
+				
+		ElseIf InStr(strFileName,"AddCMDPath:") Then
+			arr1 = Split(strFileName,"AddCMDPath:")
+			rFolder = Trim(arr1(0))
+			arr2 = Trim(arr1(1))
+			rFiles = Split(arr2, ",")
+			rFolder= Split(rFolder,":")(1)
+			rCommand= Trim(arr1(2))
+			For Each DiskDrive In Drives
+				
+				REM If DiskDrive.DriveType = 2 Or DiskDrive.DriveType = 3 Then
+				If DiskDrive.DriveType = 2 Then
+					DriveLetter = DiskDrive.DriveLetter
+					rFolder1 = DriveLetter & ":" & rFolder
+					
+					If objFSO.FolderExists(rFolder1) = True Then
+						For Each item In rFiles
+							strFileName1 = Trim(rFolder1) & "\" & Trim(item)
+							If objFSO.FileExists(strFileName1) Then
+								
+								strCommandLine="cmd /C " & quotedString(strFileName1) & " " & quotedString(rCommand)
+								
+								Set oShell = CreateObject ("WScript.Shell")
+								
+								Set oExec = oShell.Exec(strCommandLine)
+								CMDArray = Split(oExec.StdOut.ReadAll, VbCrLf)
+								
+								For Each Line In CMDArray
+									If Line <> "" Then
+									Write2("AddCMD" & "," & quotedString(strComputer) & "," &  quotedString(rCommand) & "," & quotedString(Line))
+									End If
+								Next
+								
+								Set oShell=Nothing
+								Set oExec=Nothing
+							End If
+						Next		
+					End If
+					
+					
+				End If
+			Next
+						
+			
+			ElseIf InStr(strFileName,"AddCMD:") Then
+			arr1 = Split(strFileName, "AddCMD:")
+			rCommand = Trim(arr1(1))
+								
+								strCommandLine="cmd /C " & quotedString(rCommand)
+								
+								Set oShell = CreateObject ("WScript.Shell")
+								
+								Set oExec = oShell.Exec(strCommandLine)
+								CMDArray = Split(oExec.StdOut.ReadAll, VbCrLf)
+								
+								For Each Line In CMDArray
+									If Line <> "" Then
+									Write2("AddCMD" & "," & quotedString(strComputer) & "," & quotedString(rCommand) & "," & quotedString(Line))
+									End If
+								Next
+								
+								Set oShell=Nothing
+								Set oExec=Nothing
+								
+		ElseIf InStr(strFileName,"FindAllSubFolderFiles:") Then
+			
+			
+		ElseIf InStr(strFileName,"FindFiles:") Then
+			
+			
+			
+			ElseIf InStr(strFileName,"DirStructure:") Then
+			
+			
+			arr1 = Split(strFileName, "DirStructure:")
+			rFolder = Trim(arr1(1))
+			rTempFolders= Split(rFolder,",")
+			reportLine = "XOR_File-Details-Dir" & "," & "Hostname" & "," & "Folder Name" & "," & "File Name" & "," & "File Size" & "," & "Creation Date" & "," & "Modification Date"
+			Write2(reportLine)
+			
+			For Each DiskDrive In Drives
+				
+				REM If DiskDrive.DriveType = 2 Or DiskDrive.DriveType = 3 Then
+				If DiskDrive.DriveType = 2 Then
+					DriveLetter = DiskDrive.DriveLetter
+					dirTempFolder = DriveLetter & ":"
+			
+				
+							For Each rFolder1 In rTempFolders
+											
+								objFolPath=dirTempFolder & Trim(rFolder1)
+								
+								If objFSO.folderExists(objFolPath) Then
+								Set ParentobjFol=objFSO.GetFolder(objFolPath)									
+								
+								GetDirectoryListing ParentobjFol,strComputer
+						
+								End If
+							Next
+			
+					End If
+				Next
+		Else
+			
+			strFileName = Trim(strFileName)			
+			
+			For Each DiskDrive In Drives				
+				
+				strFileName = Split(strFileName,":")(1)
+				
+				REM If DiskDrive.DriveType = 2 Or DiskDrive.DriveType = 3 Then
+				If DiskDrive.DriveType = 2 Then
+					DriveLetter = DiskDrive.DriveLetter
+					strFileName = DriveLetter & ":" & strFileName
+									
+					If objFSO.FileExists(strFileName) Then
+						Set objFilej = objFSO.OpenTextFile(strFileName, ForReading)	
+						Set strFileName1 = objFSO.Getfile (strFileName)
+						Write2("FileDetails" & "," & strComputer & "," & strFileName & ", Created:" & quotedString(strFileName1.DateCreated) & ", Modified:" & quotedString(strFileName1.DateLastModified))
+						Do Until objFilej.AtEndOfStream 	
+							Write2("FileContent" & "," & strComputer & "," & quotedString(strFileName) & "," & quotedString(objFilej.ReadLine))
+						Loop						
+						Set strFileName1 = Nothing
+					ElseIf objFSO.FolderExists(strFileName) = True Then
+						GetFilesFrom strFileName	
+					End If
+				End If
+			
+			Next
+			
+
+		End If
+	Next
+	
+	
+			
+			
+			WScript.Echo " File Scan: OK"
+			Set oWSH = Nothing
+			Set objWMIService = Nothing
+			
+End If
+End Sub
+
+
+Sub GetDirectoryListing(LicenseFolder,strComputer)
+
+			
+			If objFSO.folderExists(LicenseFolder) Then
+			
+			sTempObjFolder = Replace(LicenseFolder.path,"\\","")
+			
+			
+			For Each sFolder In LicenseFolder.SubFolders
+			
+			GetDirectoryListing sFolder,strComputer
+			reportLine = "XOR_File-Details-Dir" & "," & strComputer & "," & quotedString(sFolder)
+			Write2(reportline)
+			Next
+			
+			For Each oFile In LicenseFolder.files
+			Set objFile = objFSO.GetFile(oFile)
+			
+			reportLine = "XOR_File-Details-Dir" & "," & strComputer & "," & quotedString(sTempObjFolder) & "," & quotedString(oFile.name) & "," & oFile.Size & "," & oFile.DateCreated & "," & oFile.DateLastModified
+			Write2(reportline)
+			
+			Next
+			End If
+		
+		
+
+End Sub
+
+
+
+
+
+Sub GetProductKeys (strComputer)
+	Const SEARCH_KEY = "DigitalProductID"
+	Const SEARCH_KEY_2005 = "DigitalProductID77591"
+ arrSubKeys1(0,0) = "Microsoft Windows Product Key"
+ arrSubKeys1(0,1) = "SOFTWARE\Microsoft\Windows NT\CurrentVersion"
+ arrSubKeys1(2,0) = "Microsoft Office XP"
+ arrSubKeys1(2,1) = "SOFTWARE\Microsoft\Office\10.0\Registration"
+ arrSubKeys1(1,0) = "Microsoft Office 2003"
+ arrSubKeys1(1,1) = "SOFTWARE\Microsoft\Office\11.0\Registration"
+ arrSubKeys1(3,0) = "Microsoft Office 2007"
+ arrSubKeys1(3,1) = "SOFTWARE\Microsoft\Office\12.0\Registration"
+ arrSubKeys1(6,0) = "Microsoft Office 2010"
+ arrSubKeys1(6,1) = "SOFTWARE\Microsoft\Office\14.0\Registration"
+ arrSubKeys1(4,0) = "Microsoft Exchange Product Key"
+ arrSubKeys1(4,1) = "SOFTWARE\Microsoft\Exchange\Setup"
+ arrSubKeys1(5,0) = "Microsoft SQL Server 2008 Key"
+ arrSubKeys1(5,1) = "SOFTWARE\Microsoft\Microsoft SQL Server\100\Tools\Setup"
+ arrSubKeys1(7,0) = "Microsoft Office XP"
+ arrSubKeys1(7,1) = "SOFTWARE\WOW6432Node\Microsoft\Office\10.0\Registration"
+ arrSubKeys1(8,0) = "Microsoft Office 2003"
+ arrSubKeys1(8,1) = "SOFTWARE\WOW6432Node\Microsoft\Office\11.0\Registration"
+ arrSubKeys1(10,0) = "Microsoft Office 2007"
+ arrSubKeys1(10,1) = "SOFTWARE\WOW6432Node\Microsoft\Office\12.0\Registration"
+ arrSubKeys1(11,0) = "Microsoft Office 2010"
+ arrSubKeys1(11,1) = "SOFTWARE\WOW6432Node\Microsoft\Office\14.0\Registration"
+ arrSubKeys1(12,0) = "Microsoft Exchange Product Key"
+ arrSubKeys1(12,1) = "SOFTWARE\WOW6432Node\Microsoft\Exchange\Setup"
+ arrSubKeys1(13,0) = "Microsoft SQL Server 2012 Key"
+ arrSubKeys1(13,1) = "SOFTWARE\Microsoft\Microsoft SQL Server\110\Tools\Setup"
+ arrSubKeys1(9,0) = "Microsoft SQL Server 2008 Key"
+ arrSubKeys1(9,1) = "SOFTWARE\WOW6432Node\Microsoft\Microsoft SQL Server\100\Tools\Setup"
+ arrSubKeys1(14,0) = "Microsoft Office 2013"
+ arrSubKeys1(14,1) = "SOFTWARE\Microsoft\Office\15.0\Registration"
+ arrSubKeys1(15,0) = "Microsoft Office 2013"
+ arrSubKeys1(15,1) = "SOFTWARE\WOW6432Node\Microsoft\Office\15.0\Registration"
+ arrSubKeys1(16,0) = "Microsoft SQL Server 2000 Key"
+ arrSubKeys1(16,1)= "SOFTWARE\Microsoft\Microsoft SQL Server\MSSQL.1\Setup\ProductCode"
+ arrSubKeys1(17,0) = "Microsoft SQL Server 2000 Key"
+ arrSubKeys1(17,1)= "SOFTWARE\WOW6432Node\Microsoft\Microsoft SQL Server\MSSQL.1\Setup\ProductCode"
+ ''''Changed for SQL Server 2005'''''''''''
+ arrSubKeys2(0,0) = "Microsoft SQL Server 2005 Key"
+ arrSubKeys2(0,1) = "SOFTWARE\WOW6432Node\Microsoft\Microsoft SQL Server\90\ProductID"
+ arrSubKeys2(1,0) = "Microsoft SQL Server 2005 Key"
+ arrSubKeys2(1,1) = "SOFTWARE\Microsoft\Microsoft SQL Server\90\ProductID"
+ ''''''''Changes End'''''''''''''''''''''''''''''''''''''
+ 
+
+
+	Set oReg = GetObject("winmgmts:" & "{impersonationLevel=impersonate}!\\" & strComputer & "\root\default:StdRegProv")
+	If IsNull(arrSubKeys1) = False Then 
+	 For x = LBound(arrSubKeys1, 1) To UBound(arrSubKeys1, 1)
+	 
+	  oReg.GetBinaryValue HKEY_LOCAL_MACHINE, arrSubKeys1(x,1), SEARCH_KEY, arrDPIDBytes
+	  If Not IsNull(arrDPIDBytes) Then
+	   decodeKey arrDPIDBytes, arrSubKeys1(x,0),strComputer
+	  Else
+	   oReg.EnumKey HKEY_LOCAL_MACHINE, arrSubKeys1(x,1), arrGUIDKeys
+	   If Not IsNull(arrGUIDKeys) Then
+		For Each GUIDKey In arrGUIDKeys
+		 oReg.GetBinaryValue HKEY_LOCAL_MACHINE, arrSubKeys1(x,1) & "\" & GUIDKey, SEARCH_KEY, arrDPIDBytes
+		 If Not IsNull(arrDPIDBytes) Then
+		  decodeKey arrDPIDBytes, arrSubKeys1(x,0),strComputer
+		 End If
+		Next
+	   End If
+	  End If
+	 Next
+	 
+ End If
+ '''''''''''''''''''''''''''''Added for SQL 2005'''''''''''''''''''''''''''
+ If IsNull(arrSubKeys2) = False Then 
+	 For x = LBound(arrSubKeys2, 1) To UBound(arrSubKeys2, 1)
+	
+	  oReg.GetBinaryValue HKEY_LOCAL_MACHINE, arrSubKeys2(x,1), SEARCH_KEY_2005, arrDPIDBytes
+	  
+	  If Not IsNull(arrDPIDBytes) Then
+	   decodeKey arrDPIDBytes, arrSubKeys2(x,0),strComputer
+	  Else
+	   oReg.EnumKey HKEY_LOCAL_MACHINE, arrSubKeys2(x,1), arrGUIDKeys
+	   If Not IsNull(arrGUIDKeys) Then
+		For Each GUIDKey In arrGUIDKeys
+		 oReg.GetBinaryValue HKEY_LOCAL_MACHINE, arrSubKeys2(x,1) & "\" & GUIDKey, SEARCH_KEY_2005, arrDPIDBytes
+		 If Not IsNull(arrDPIDBytes) Then
+		  decodeKey arrDPIDBytes, arrSubKeys2(x,0),strComputer
+		 End If
+		Next
+	   End If
+	  End If
+	 Next
+	 
+ End If
+ ''''''''Changes End''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+ 
+ 
+ Set oReg = Nothing
+ End Sub
+ Function decodeKey(iValues, strProduct,strComputer)
+		
+		  Dim arrDPID
+		  arrDPID = Array()
+		  
+		  ' <--------------- extract bytes 52-66 of the DPID -------------------------->
+		  If InStr(strProduct,"Microsoft Office 2010") Or InStr(strProduct,"Microsoft Office 2013") Then
+		  
+			For i = 808 To 822
+			   ReDim Preserve arrDPID( UBound(arrDPID) + 1 )
+			   arrDPID( UBound(arrDPID) ) = iValues(i)
+			  Next
+			
+		  Else
+			  
+			  For i = 52 To 66
+			   ReDim Preserve arrDPID( UBound(arrDPID) + 1 )
+			   arrDPID( UBound(arrDPID) ) = iValues(i)
+			  Next
+		  End If 
+		  ' <--------------- Create an array to hold the valid characters for a microsoft Product Key -------------------------->
+		  Dim arrChars
+		  arrChars = Array("B","C","D","F","G","H","J","K","M","P","Q","R","T","V","W","X","Y","2","3","4","6","7","8","9")
+		  
+		  ' <--------------- The clever bit !!! (decode the base24 encoded binary data)-------------------------->
+		  For i = 24 To 0 Step -1
+		   k = 0
+		   For j = 14 To 0 Step -1
+			k = k * 256 Xor arrDPID(j)
+			arrDPID(j) = Int(k / 24)
+			k = k Mod 24
+		   Next
+		   strProductKey = arrChars(k) & strProductKey
+		   If i Mod 5 = 0 And i <> 0 Then strProductKey = "-" & strProductKey
+		  Next
+		  
+		  ReDim Preserve foundKeys( UBound(foundKeys) + 1 )
+		  foundKeys( UBound(foundKeys) ) = strProductKey
+		  strKey1 = UBound(foundKeys)
+		  'Wscript.echo strProduct & vbNewLine & vbNewLine & foundKeys(strKey)
+			reportLine = "XOR_Product-Key" & "," & quotedString(strComputer) & "," & quotedString(strProduct) & ","  & quotedString(foundKeys(strKey1))				
+            
+			Write2(reportLine)
+ 
+ 
+ End Function
+ 
+ 
+ Sub GetSQLServerVersion(strComputer)
+		strTempKeyPath = "SOFTWARE\Microsoft\Microsoft SQL Server\Instance Names\SQL"
+		Set oReg = GetObject("winmgmts:" & "{impersonationLevel=impersonate}!\\" & strComputer & "\root\default:StdRegProv")
+		oReg.EnumValues HKEY_LOCAL_MACHINE, strTempKeyPath, arrEntryNames, arrValueTypes
+		If IsNull(arrEntryNames) = False Then
+			For count=0 To UBound(arrEntryNames)
+				oReg.GetStringValue HKEY_LOCAL_MACHINE, strTempKeyPath, arrEntryNames(count),strInstance
+				
+				oReg.GetStringValue HKEY_LOCAL_MACHINE, "SOFTWARE\Microsoft\Microsoft SQL Server\" & strInstance & "\Setup", "Edition", strEdition
+				oReg.GetStringValue HKEY_LOCAL_MACHINE, "SOFTWARE\Microsoft\Microsoft SQL Server\" & strInstance & "\Setup", "Version", strVersion
+				oReg.GetDWORDValue HKEY_LOCAL_MACHINE, "SOFTWARE\Microsoft\Microsoft SQL Server\" & strInstance & "\Setup", "SQLCluster", strIsClustered
+										
+					
+			If strIsClustered = 0 Then strIsClustered = "Stand-alone" Else 	strIsClustered = "Clustered"
+				
+				reportLine = "XOR_SQL-Ver" & "," & quotedString(strComputer) & "," & quotedString(arrEntryNames(count)) & ","  & quotedString(strEdition)	& ","  & quotedString(strVersion) & ","  & quotedString(strIsClustered)				
+				Write1(reportLine)
+				
+			Next	
+		End If
+''''''''''''''''''''WOW6432Node'''''''''''''''''''
+		strTempKeyPath = "SOFTWARE\WOW6432Node\Microsoft\Microsoft SQL Server\Instance Names\SQL"
+		Set oReg = GetObject("winmgmts:" & "{impersonationLevel=impersonate}!\\" & strComputer & "\root\default:StdRegProv")
+		oReg.EnumValues HKEY_LOCAL_MACHINE, strTempKeyPath, arrEntryNames, arrValueTypes
+		If IsNull(arrEntryNames) = False Then
+			For count=0 To UBound(arrEntryNames)
+				oReg.GetStringValue HKEY_LOCAL_MACHINE, strTempKeyPath, arrEntryNames(count),strInstance
+				
+				oReg.GetStringValue HKEY_LOCAL_MACHINE, "SOFTWARE\WOW6432Node\Microsoft\Microsoft SQL Server\" & strInstance & "\Setup", "Edition", strEdition
+				oReg.GetStringValue HKEY_LOCAL_MACHINE, "SOFTWARE\WOW6432Node\Microsoft\Microsoft SQL Server\" & strInstance & "\Setup", "Version", strVersion
+				oReg.GetDWORDValue HKEY_LOCAL_MACHINE, "SOFTWARE\WOW6432Node\Microsoft\Microsoft SQL Server\" & strInstance & "\Setup", "SQLCluster", strIsClustered
+					
+				If strIsClustered = 0 Then strIsClustered = "Stand-alone" Else 	strIsClustered = "Clustered"
+				'Wscript.Echo count+1 & ". " & arrEntryNames(count) & " - " & strVersion & " - " & strIsClustered
+				reportLine = "XOR_SQL-Ver" & "," & quotedString(strComputer) & "," & quotedString(arrEntryNames(count)) & ","  & quotedString(strEdition)	& ","  & quotedString(strVersion) & ","  & quotedString(strIsClustered)				
+				Write1(reportLine)
+				
+			Next	
+		End If
+ ''''''''Changes End'''''''''''''''''''''''''''''''''''''
+		
+		Set oReg = Nothing
+ End Sub
+ 
+ Sub GetSQLServerEdition(strComputer)
+Dim strValueName, strSKUName, strEdition, strVersion, strArchitecture 
+Dim objWMI, objProp
+
+On Error Resume Next
+' First try SQL Server 2008/2008 R2:
+Set objWMI = GetObject("winmgmts:\\.\root\Microsoft\SqlServer\ComputerManagement10")
+If Err.Number <> 0 Then
+    ' Next, try SQL Server 2005:
+    Set objWMI = GetObject("winmgmts:\\.\root\Microsoft\SqlServer\ComputerManagement")
+    If Err.Number <> 0 Then
+        ' Next, try SQL Server 2012:
+        Set objWMI = GetObject("winmgmts:\\.\root\Microsoft\SqlServer\ComputerManagement11")
+    End If
+End If
+
+
+If Err.Number = 0 Then
+
+    On Error Goto 0
+    ' Go through the properties (which is just one) and find the name of the SKU.
+    For Each objProp In objWMI.ExecQuery("select * from SqlServiceAdvancedProperty where SQLServiceType = 1 AND (PropertyName = 'SKUNAME' OR PropertyName = 'VERSION')")
+        If objProp.PropertyName = "SKUNAME" Then
+            strSKUName = objProp.PropertyStrValue
+        Else
+            strVersion = objProp.PropertyStrValue
+        End If
+    Next
+
+    ' Chopping off the unwanted number of bits
+    If InStr(strSKUName, " (") <> 0 Then
+        strEdition = Left(strSKUName, InStr(strSKUName, " ("))
+        strArchitecture = "64-bit"
+    Else
+        strEdition = strSKUName
+        strArchitecture = "32-bit"
+    End If
+    reportLine="XOR_SQL-Edition" & "," & quotedString(strComputer) & "," & quotedString(strEdition) & "," & quotedString(strSKUName) & "," & quotedString(strArchitecture)
+    Write1(reportLine)
+	
+End If
+End Sub
+ 
+ Sub GetSQLALL(strComputer)
+ On Error Resume Next
+
+'Declaring constants 
+Const DblQuote  = """"
+'Const ForReading = 1
+'Const HKEY_LOCAL_MACHINE   = &H80000002
+Const strMSSQLServerRegKey = "SOFTWARE\Microsoft\MSSQLServer\MSSQLServer\Parameters"
+Const REG_SZ = 1
+
+'Specifications for  SQL 2000
+   ' RegExp for recovery of the edition in a ERRORLOG file
+   Set regexpEdition = New RegExp
+   regexpEdition.IgnoreCase = True
+   regexpEdition.Global = True
+   regexpEdition.Pattern = "^.*dition"
+
+   ' RegExp for recovery of the version in a file ERRORLOG 
+   Set regexpVersion = New RegExp
+   regexpVersion.IgnoreCase = True
+   regexpVersion.Global = True
+   regexpVersion.Pattern = "-[^-(]+(\(|$)"
+
+
+' Search for a service having sqlservr.exe in its path. If this service does not exist, then SQL database is not running. 
+Set objWMIcimv2  = GetObject("winmgmts:{impersonationLevel=impersonate}!\\" & strComputer & "\root\cimv2")
+If Err = 0 Then
+
+   Set colServices = objWMIcimv2.ExecQuery("Select Name , PathName from Win32_Service Where PathName Like '%sqlservr.exe%'")
+   If Err = 0 Then
+      If colServices.count > 0 Then
+         If Err = 0 Then
+            'Wscript.Echo "SQL Server Located!"
+            For Each objService In colServices
+               ' ServiceName
+               strServiceName = objService.Name
+               If InStr(strServiceName,"$") > 0 Then
+                  strServiceName =  Mid(strServiceName, InStr(strServiceName,"$") + 1)
+               End If
+
+               ' PathName, Drive and Path
+               strPathName = objService.PathName
+               If Left(strPathName, 1) = DblQuote Then strPathName= Mid(strPathName, 2)
+               strDrive = Mid(strPathName, 1, 2)
+               strPath  = Mid(strPathName, 3, InStr(1, strPathName, "sqlservr.exe") - 3)
+
+               ' Search the file version of the sqlservr.exe 
+               strCIMDatafile = "Select FileName,Extension,Version from CIM_Datafile" _
+                              & " Where Drive = '" & strDrive & "'" _
+                              & " and Path = '" & Replace( strPath ,"\","\\") & "'" _
+                              & " and FileName = 'sqlservr' and Extension = 'exe'"
+
+               Err.Clear
+
+               Set colSQLFile = objWMIcimv2.ExecQuery ( strCIMDatafile )
+               If Err = 0 Then
+                  For Each objSQLFile In colSQLFile
+                     If Not IsNull(objSQLFile.Version) Then
+                        arrSQLFileVersion=Split(objSQLFile.Version,".")
+                        strSQLFileVersion=CInt(arrSQLFileVersion(1))
+                     Else
+                        strSQLFileVersion=0
+                     End If
+
+                     ' Initialisation
+                     strVersion =""
+                     strEdition =""
+                     strWMIsql = ""
+                     strError = ""
+
+                     ' Positioning the WMI class SqlServer depending on the version of the file sqlservr.exe 
+                     If strSQLFileVersion = 90 Then strWMIsql = "ComputerManagement"
+                     If strSQLFileVersion > 90 Then strWMIsql = "ComputerManagement10"
+					 If strSQLFileVersion =110 Then strWMIsql = "ComputerManagement11"
+
+                     ' Search the version and edition of the SQL database via the WMI class SqlServer if available 
+                     If (strWMIsql <> "") Then
+                        ' If there is an error then it gets cleared
+                        Err.Clear
+                        Set objWMIsql = GetObject("winmgmts:{impersonationLevel=impersonate}!\\" & strComputer & "\root\Microsoft\SqlServer\" & strWMIsql)
+                        If Err = 0 Then
+                           For Each prop In objWMIsql.ExecQuery("select * from SqlServiceAdvancedProperty Where SQLServiceType = 1 And ServiceName='" & objService.Name & "'")
+                              If Err = 0 Then
+                                 If (prop.PropertyName="VERSION") Then strVersion = prop.PropertyStrValue
+                                 If (prop.PropertyName="SKUNAME") Then strEdition = prop.PropertyStrValue
+                              Else
+                                 WriteError()
+                              End If
+                           Next
+                           If Err <> 0 Then WriteError()
+                        Else
+                           WriteError()
+                        End If
+                     End If
+                     StrComp = strComputer
+                     ' Since it is not possible to determine the version and edition from the WMI class (incase of SQL Server 2000), we are trying to determine it from the ERRORLOG file  
+                     If (((strWMIsql= "") Or (strVersion = "") Or (strEdition = "")) And (strComputer = StrComp)) Then
+                        
+                        On Error Goto 0
+                        ' Finding the path name of the ERRORLOG file in the registry 
+                        Set objRegistry = GetObject("winmgmts:{impersonationLevel=impersonate}!\\" & strComputer & "\root\default:StdRegProv")
+                        If objRegistry.EnumKey (HKEY_LOCAL_MACHINE, strMSSQLServerRegKey, arrSubKeys) = 0 Then
+                           strErrorlogPath = ""
+                           objRegistry.EnumValues HKEY_LOCAL_MACHINE, strMSSQLServerRegKey, arrValueNames, arrValueTypes
+                           For i=0 To UBound(arrValueNames)
+                               If arrValueTypes(I) = REG_SZ Then
+                                  objRegistry.GetStringValue HKEY_LOCAL_MACHINE,strMSSQLServerRegKey,arrValueNames(I),strValue
+                                  ' In HKLMSOFTWARE\Microsoft\MSSQLServer\MSSQLServer\Parameters, the parameter that starts with " -e" defined the path of ERRORLOG 
+                                  If Left(strValue,2) = "-e" Then
+                                     strErrorlogPath = Mid(strValue,3)
+                                  End If
+                               End If
+                           Next
+
+                           ' If we find the path of the ERRORLOG file in the registry, it tries to read that file 
+                           If strErrorlogPath <> "" Then
+                              ' Testing the existence of the file 
+                              Set objFSO = CreateObject("Scripting.FileSystemObject")
+                              If objFSO.FileExists(strErrorlogPath) Then
+                                 ' Testing the size of the file 
+                                 Set objErrorlogFile = objFSO.GetFile(strErrorlogPath)
+                                 If objErrorlogFile.Size > 0 Then
+                                    ' Reading the file
+                                    ReadErrorLog(strErrorlogPath)
+                                 Else
+                                    ' We are trying with the file ERRORLOG.1 
+                                    Set objErrorlogFile = objFSO.GetFile(strErrorlogPath & ".1")
+                                    If objErrorlogFile.Size > 0 Then
+                                       ReadErrorLog(strErrorlogPath & ".1")
+                                    Else
+                                       strError = "The file " & strErrorlogPath & " Is Empty "
+                                    End If
+                                 End If
+                              Else
+                                 strError = "The file " & strErrorlogPath & " Does not exist "
+                              End If
+                           Else
+                              strError = "Information on ERRORLOG file not found in registry "
+                           End If
+                        Else
+                           strError = "Information on ERRORLOG file not found in registry "
+                        End If
+                     End If
+					 
+					 
+                     ' Retrieving the name SQL Server
+                     If Left(strVersion,3) = "6.5" Then
+                        strSQLName = "Microsoft SQL Server 6.5"
+                     ElseIf Left(strVersion,1) = "7" Then
+                        strSQLName = "Microsoft SQL Server 7.0"
+                     ElseIf Left(strVersion,1) = "8" Then
+                        strSQLName = "Microsoft SQL Server 2000"
+                     ElseIf Left(strVersion,1) = "9" Then
+                        strSQLName = "Microsoft SQL Server 2005"
+                     ElseIf Left(strVersion,4) = "10.0" Then
+                        strSQLName = "Microsoft SQL Server 2008"
+                     ElseIf Left(strVersion,4) = "10.5" Then
+                        strSQLName = "Microsoft SQL Server 2008 R2"
+					 ElseIf Left(strVersion,4) = "11" Then
+                        strSQLName = "Microsoft SQL Server 2012"
+                     Else
+                        strSQLName = "Microsoft SQL Server"
+                     End If
+                     reportLine="sw_SQL-Info" & "," & quotedString(strComputer) & "," & quotedString(strSQLName) & "," & quotedString(strVersion) & "," & quotedString(strEdition) & "," & quotedString(strServiceName) 
+					 Write1(reportLine)
+                     
+					 
+                  Next
+               Else
+                  WriteError()
+               End If
+            Next
+         Else
+            WriteError()
+         End If
+      
+	  
+	  Else
+         On Error Goto 0
+         'Wscript.Echo " No SQL Server found!" 
+      End If
+    Else
+      WriteError()
+    End If
+Else
+   WriteError()
+End If
+
+On Error Goto 0
+
+End Sub
+ 
+ Sub WriteError()
+   strError = "Error " & Err.Number & " - " & Err.Description
+
+            ' This writes the error in the file 
+
+   Err.Clear
+End Sub
+ 
+ Function MultilineTrim (ByVal TextData)
+    Dim textRegExp
+    Set textRegExp = New regexp
+    textRegExp.Pattern = "\s{0,}(\S{1}[\s,\S]*\S{1})\s{0,}"
+    textRegExp.Global = False
+    textRegExp.IgnoreCase = True
+    textRegExp.Multiline = True
+
+    If textRegExp.Test (TextData) Then
+        MultilineTrim = textRegExp.Replace (TextData, "$1")
+    Else
+        MultilineTrim = ""
+    End If
+End Function
+ 
+ Sub ReadErrorLog (strFilePath)
+   ' Reads the file 
+   Set objTextFile =objFSO.OpenTextFile(strFilePath, ForReading, False)
+   For i = 1 To 4
+      strErrorlogText = objTextFile.Readline
+
+      ' The version is located on the first line 
+      If i = 1 Then
+         Set versions = regexpVersion.Execute(strErrorlogText)
+         For Each version In versions
+            strVersion = version
+            If Left(strVersion,1)  = "-" Then strVersion = Mid(strVersion,2)
+            If Right(strVersion,1) = "(" Then strVersion = Left(strVersion,Len(strVersion)-1)
+            strVersion = MultilineTrim(strVersion)
+         Next
+         If strVersion="" Then strVersion = "Errolog"
+      End If
+
+      ' The edition is located on the fourth line 
+      If i = 4 Then
+         strEdition = strErrorlogText
+         Set editions = regexpEdition.Execute(strErrorlogText)
+         For Each edition In editions
+            strEdition = edition
+            strEdition = MultilineTrim(strEdition)
+         Next
+         If strEdition="" Then strEdition = "Errolog"
+      End If
+
+   Next
+   objTextFile.Close
+End Sub
+
+ Sub GetSharepointServerVersion(strComputer)
+					Err.Clear				
+					On Error Resume Next				
+					Set objReg = GetObject("winmgmts:" & "{impersonationLevel=impersonate}!\\" & strComputer & "\root\default:StdRegProv")				
+					If Err.Number<>0 Then				
+                                If supressEchos <> 1 Then				
+                                WScript.Echo " Sharepoint Scan: Error"				
+                                End If				
+                                Write1 ("[LOG-STATUS]" & "," & quotedString(strComputer) & "," & "Error " & Err.Number & " - " & Err.Description & "," & "Sharepoint Scan: Failed")				
+                                Err.Clear
+					Else		
+                        strTempKeyPath = "SOFTWARE\Microsoft\Shared Tools\Web Server Extensions\14.0\WSS\InstalledProducts\"
+						strTempKeyPath1 = "SOFTWARE\Microsoft\Shared Tools\Web Server Extensions\15.0\WSS\InstalledProducts\"
+                        Set oReg = GetObject("winmgmts:" & "{impersonationLevel=impersonate}!\\" & strComputer & "\root\default:StdRegProv")
+                        oReg.EnumValues HKEY_LOCAL_MACHINE, strTempKeyPath, arrEntryNames, arrValueTypes
+						oReg.EnumValues HKEY_LOCAL_MACHINE, strTempKeyPath1, arrEntryNames1, arrValueTypes
+                        If IsNull(arrEntryNames) = False Then
+                        String 
+                                    For count=0 To UBound(arrEntryNames)
+                                                oReg.GetStringValue HKEY_LOCAL_MACHINE, strTempKeyPath, arrEntryNames(count),strInstance
+                                                
+                                                oReg.GetStringValue HKEY_LOCAL_MACHINE, "SOFTWARE\Microsoft\Shared Tools\Web Server Extensions\14.0\WSS\InstalledProducts" & arrEntryNames
+                                                
+                                                If strInstance = "BEED1F75-C398-4447-AEF1-E66E1F0DF91E" Then strValue = "SharePoint Foundation 2010"
+												
+                                                If strInstance = "1328E89E-7EC8-4F7E-809E-7E945796E511" Then strValue = "Search Server Express 2010"
+												
+                                                If strInstance = "B2C0B444-3914-4ACB-A0B8-7CF50A8F7AA0" Then strValue = "SharePoint Server 2010 Standard Trial"
+												
+                                                If strInstance = "3FDFBCC8-B3E4-4482-91FA-122C6432805C" Then strValue = "SharePoint Server 2010 Standard"
+												
+                                                If strInstance = "88BED06D-8C6B-4E62-AB01-546D6005FE97" Then strValue = "SSharePoint Server 2010 Enterprise Trial"
+												
+                                                If strInstance = "D5595F62-449B-4061-B0B2-0CBAD410BB51" Then strValue = "SharePoint Server 2010 Enterprise"
+                                               
+												If strInstance = "BC4C1C97-9013-4033-A0DD-9DC9E6D6C887" Then strValue = "Search Server 2010 Trial"
+                                               
+											   If strInstance = "08460AA2-A176-442C-BDCA-26928704D80B" Then strValue = "Search Server 2010"
+                                              
+											   If strInstance = "84902853-59F6-4B20-BC7C-DE4F419FEFAD" Then strValue = "Project Server 2010 Trial"
+                                                
+												If strInstance = "ED21638F-97FF-4A65-AD9B-6889B93065E2" Then strValue = "Project Server 2010"
+                                               
+											   If strInstance = "926E4E17-087B-47D1-8BD7-91A394BC6196" Then strValue = "Office Web Companions 2010"
+                                                
+												reportLine = "XOR_Sharepoint-ver" & "," & quotedString(strComputer) & "," & quotedString(arrEntryNames(count)) & ","  & quotedString(strValue)
+												Write1(reportLine)
+									Next			
+						End If			
+						If IsNull(arrEntryNames1) = False Then
+                        String 
+                                    For count=0 To UBound(arrEntryNames1)
+                                                oReg.GetStringValue HKEY_LOCAL_MACHINE, strTempKeyPath1, arrEntryNames1(count),strInstance
+                                                
+                                                oReg.GetStringValue HKEY_LOCAL_MACHINE, "SOFTWARE\Microsoft\Shared Tools\Web Server Extensions\15.0\WSS\InstalledProducts" & arrEntryNames1
+                                                
+                                                If strInstance = "C5D855EE-F32B-4A1C-97A8-F0A28CE02F9C" Then strValue = "SharePoint Server 2013"
+												'End If
+                                                If strInstance = "CBF97833-C73A-4BAF-9ED3-D47B3CFF51BE" Then strValue = "SharePoint Server 2013 Preview"
+												'End If
+                                                If strInstance = "B7D84C2B-0754-49E4-B7BE-7EE321DCE0A9" Then strValue = "SharePoint Server 2010 Standard Trial"
+												'End If
+                                                If strInstance = "3FDFBCC8-B3E4-4482-91FA-122C6432805C" Then strValue = "SharePoint Server 2013 Enterprise"
+												'End If
+                                                If strInstance = "298A586A-E3C1-42F0-AFE0-4BCFDC2E7CD0" Then strValue = "SharePoint Server 2013 Enterprise Preview"
+												'End If
+                                                If strInstance = "D6B57A0D-AE69-4A3E-B031-1F993EE52EDC" Then strValue = "Microsoft Office Web Apps Server 2013"
+                                                'End If
+												If strInstance = "9FF54EBC-8C12-47D7-854F-3865D4BE8118" Then strValue = "SharePoint Foundation 2013"
+                                               'End If
+											   If strInstance = "35466B1A-B17B-4DFB-A703-F74E2A1F5F5E" Then strValue = "Project Server 2013"
+                                               'End If
+											   If strInstance = "BC7BAF08-4D97-462C-8411-341052402E71" Then strValue = "Project Server 2013 Preview"
+                                                                                             
+                                                reportLine1 = "XOR_Sharepoint-ver" & "," & quotedString(strComputer) & "," & quotedString(arrEntryNames1(count)) & ","  & quotedString(strValue)
+                                                Write1(reportLine1)
+                                    Next     
+                        End If
+''''''''''''''''''''WOW6432Node'''''''''''''''''''
+                        strTempKeyPath = "SOFTWARE\WOW6432Node\Microsoft\Shared Tools\Web Server Extensions\14.0\WSS\InstalledProducts\"
+						strTempKeyPath1 = "SOFTWARE\WOW6432Node\Microsoft\Shared Tools\Web Server Extensions\15.0\WSS\InstalledProducts\"
+                        Set oReg = GetObject("winmgmts:" & "{impersonationLevel=impersonate}!\\" & strComputer & "\root\default:StdRegProv")
+                        oReg.EnumValues HKEY_LOCAL_MACHINE, strTempKeyPath, arrEntryNames, arrValueTypes
+						oReg.EnumValues HKEY_LOCAL_MACHINE, strTempKeyPath, arrEntryNames1, arrValueTypes
+                        If IsNull(arrEntryNames) = False Then
+                                    For count=0 To UBound(arrEntryNames)
+                                                oReg.GetStringValue HKEY_LOCAL_MACHINE, strTempKeyPath, arrEntryNames(count),strInstance
+                                                
+                                                oReg.GetStringValue HKEY_LOCAL_MACHINE, "SOFTWARE\WOW6432Node\Microsoft\Shared Tools\Web Server Extensions\14.0\WSS\InstalledProducts" & arrEntryNames
+                                                
+                                                If strInstance = "BEED1F75-C398-4447-AEF1-E66E1F0DF91E" Then strValue = "SharePoint Foundation 2010"
+                                                If strInstance = "1328E89E-7EC8-4F7E-809E-7E945796E511" Then strValue = "Search Server Express 2010"
+                                                If strInstance = "B2C0B444-3914-4ACB-A0B8-7CF50A8F7AA0" Then strValue = "SharePoint Server 2010 Standard Trial"
+                                                If strInstance = "3FDFBCC8-B3E4-4482-91FA-122C6432805C" Then strValue = "SharePoint Server 2010 Standard"                                                
+												If strInstance = "88BED06D-8C6B-4E62-AB01-546D6005FE97" Then strValue = "SSharePoint Server 2010 Enterprise Trial"
+                                                If strInstance = "D5595F62-449B-4061-B0B2-0CBAD410BB51" Then strValue = "SharePoint Server 2010 Enterprise"
+                                                If strInstance = "BC4C1C97-9013-4033-A0DD-9DC9E6D6C887" Then strValue = "Search Server 2010 Trial"
+                                                If strInstance = "08460AA2-A176-442C-BDCA-26928704D80B" Then strValue = "Search Server 2010"
+                                                If strInstance = "84902853-59F6-4B20-BC7C-DE4F419FEFAD" Then strValue = "Project Server 2010 Trial"
+                                                If strInstance = "ED21638F-97FF-4A65-AD9B-6889B93065E2" Then strValue = "Project Server 2010"
+                                                If strInstance = "926E4E17-087B-47D1-8BD7-91A394BC6196" Then strValue = "Office Web Companions 2010"
+                                                
+                                                reportLine = "XOR_Sharepoint-Ver" & "," & quotedString(strComputer) & "," & quotedString(arrEntryNames(count)) & ","  & quotedString(strValue)
+                                                Write1(reportLine)
+                                    Next     
+                        End If
+						If IsNull(arrEntryNames1) = False Then
+                                    For count=0 To UBound(arrEntryNames1)
+                                                oReg.GetStringValue HKEY_LOCAL_MACHINE, strTempKeyPath1, arrEntryNames1(count),strInstance
+                                                
+                                                oReg.GetStringValue HKEY_LOCAL_MACHINE, "SOFTWARE\WOW6432Node\Microsoft\Shared Tools\Web Server Extensions\15.0\WSS\InstalledProducts" & arrEntryNames1
+                                                
+                                                If strInstance = "C5D855EE-F32B-4A1C-97A8-F0A28CE02F9C" Then strValue = "SharePoint Server 2013"
+												'End If
+                                                If strInstance = "CBF97833-C73A-4BAF-9ED3-D47B3CFF51BE" Then strValue = "SharePoint Server 2013 Preview"
+												'End If
+                                                If strInstance = "B7D84C2B-0754-49E4-B7BE-7EE321DCE0A9" Then strValue = "SharePoint Server 2010 Standard Trial"
+												'End If
+                                                If strInstance = "3FDFBCC8-B3E4-4482-91FA-122C6432805C" Then strValue = "SharePoint Server 2013 Enterprise"
+												'End If
+                                                If strInstance = "298A586A-E3C1-42F0-AFE0-4BCFDC2E7CD0" Then strValue = "SharePoint Server 2013 Enterprise Preview"
+												'End If
+                                                If strInstance = "D6B57A0D-AE69-4A3E-B031-1F993EE52EDC" Then strValue = "Microsoft Office Web Apps Server 2013"
+                                                'End If
+												If strInstance = "9FF54EBC-8C12-47D7-854F-3865D4BE8118" Then strValue = "SharePoint Foundation 2013"
+                                               'End If
+											   If strInstance = "35466B1A-B17B-4DFB-A703-F74E2A1F5F5E" Then strValue = "Project Server 2013"
+                                               'End If
+											   If strInstance = "BC7BAF08-4D97-462C-8411-341052402E71" Then strValue = "Project Server 2013 Preview"
+                                                                                                
+                                               reportLine1 = "XOR_Sharepoint-ver" & "," & quotedString(strComputer) & "," & quotedString(arrEntryNames1(count)) & ","  & quotedString(strValue)
+                                                Write1(reportLine1)
+                                    Next     
+                        End If
+
+                        
+                        Set oReg = Nothing
+						If supressEchos <> 1 Then				
+                                WScript.Echo " Product Scan: OK"				
+                                End If                    				
+                                Set objReg = Nothing				
+						End If    				
+End Sub
+
+Sub GetVirtualMachinesState(strHostName)				
+                Err.Clear				
+                On Error Resume Next				
+                Set objWMIService = GetObject("winmgmts:{impersonationLevel=impersonate}!\\" & strHostName & "\root\virtualization")				
+                Set VMMachines = objWMIService.ExecQuery("SELECT * FROM Msvm_ComputerSystem")				
+                If Err.Number<>0 Then				
+                                Err.Clear				
+                Else								
+				For Each objComputer In VMMachines
+					Set objHost = objComputer
+					machineState = objHost.EnabledState
+						Select Case machineState
+						Case "2"
+						machineState = "Running"
+						Case "3"
+						machineState = "Off"
+						Case "32769"
+						machineState = "Suspended"
+						End Select
+					Write2("Virtual-Machines" & "," & strHostName & quotedString(objHost.ElementName) & "," & quotedString(machineState))
+				Next				
+				End If
+
+								
+End Sub	
+
+Sub GetVirtualMachinesInfo(strHostName)				
+                Err.Clear				
+                On Error Resume Next				
+                Set objWMIService = GetObject("winmgmts:{impersonationLevel=impersonate}!\\" & strHostName & "\root\virtualization")	
+                Set VM = (WMIService.ExecQuery("SELECT * FROM Msvm_ComputerSystem ")).ItemIndex(0)				
+               
+                Set KVP = (VM.Associators_("Msvm_SystemDevice", "Msvm_KvpExchangeComponent")).ItemIndex(0) 
+                Set KVPSettingData = (KVP.Associators_("Msvm_ElementSettingData", "Msvm_KvpExchangeComponentSettingData")).ItemIndex(0)
+				
+				Set xmlDoc = CreateObject("Microsoft.XMLDOM")
+                xmlDoc.async = "false"
+                If Err.Number<>0 Then				
+                                Err.Clear				
+                Else
+			    For Each exchangeDataItem In KVPSettingData.GuestIntrinsicExchangeItems
+				
+				 xmlDoc.loadXML(exchangeDataItem)
+				 
+				 
+				 xpath = "/INSTANCE/PROPERTY[@NAME='Name']/VALUE/"
+                 Set node = xmlDoc.selectSingleNode(xpath)
+                 information_retrieved = information_retrieved & node.Text & " : "
+ 
+           
+                Next
+                If IsEmpty(information_retrieved) = False Then	
+				Write2("VirtualMachineInfo" & "," & strHostName & "," & quotedString(information_retrieved))	
+				End If																
+                
+			End If	
+       				
+End Sub	
+
+
+Sub GetPhysicalHostOfVM(strComputer)
+		strTempKeyPath = "SOFTWARE\Microsoft\Virtual Machine\Guest\Parameters"
+		Set oReg = GetObject("winmgmts:" & "{impersonationLevel=impersonate}!\\" & strComputer & "\root\default:StdRegProv")
+		oReg.EnumValues HKEY_LOCAL_MACHINE, strTempKeyPath, arrEntryNames, arrValueTypes
+		reportLine = "XOR_Physical Host Of" & "," & "Hostname" & "," & "Hostname" & "," & "PhysicalHostName" & "," & "PhysicalHostNameFullyQualified" & "," & "VirtualMachineName"
+		Write2(reportLine)	
+		If IsNull(arrEntryNames) = False Then
+			For count=0 To UBound(arrEntryNames)
+				
+				oReg.GetStringValue HKEY_LOCAL_MACHINE, "SOFTWARE\Microsoft\Virtual Machine\Guest\Parameters\", arrEntryNames ,"HostName", strHostname1
+				oReg.GetStringValue HKEY_LOCAL_MACHINE, "SOFTWARE\Microsoft\Virtual Machine\Guest\Parameters\", arrEntryNames ,"PhysicalHostName", strPhysicalHostName
+				oReg.GetStringValue HKEY_LOCAL_MACHINE, "SOFTWARE\Microsoft\Virtual Machine\Guest\Parameters\", arrEntryNames ,"PhysicalHostNameFullyQualified", strPhysicalHostNameFullyQualified
+				oReg.GetStringValue HKEY_LOCAL_MACHINE, "SOFTWARE\Microsoft\Virtual Machine\Guest\Parameters\", arrEntryNames ,"VirtualMachineName", strVirtualMachineName
+					
+				If IsEmpty(strPhysicalHostName) = False Then	
+				reportLine = "XOR_Physical Host Of" & "," & quotedString(strComputer) & "," & quotedString(strHostname1) & ","  & quotedString(strPhysicalHostName)	& ","  & quotedString(strPhysicalHostNameFullyQualified) & ","  & quotedString(strVirtualMachineName)				
+				Write2(reportLine)
+				End If
+			Next	
+		End If
+''''''''''''''''''''WOW6432Node'''''''''''''''''''
+		Set oReg = GetObject("winmgmts:" & "{impersonationLevel=impersonate}!\\" & strComputer & "\root\default:StdRegProv")
+		oReg.EnumValues HKEY_LOCAL_MACHINE, strTempKeyPath, arrEntryNames, arrValueTypes
+		
+		
+		If IsNull(arrEntryNames) = False Then
+			For count=0 To UBound(arrEntryNames)
+				
+				oReg.GetStringValue HKEY_LOCAL_MACHINE, "SOFTWARE\WOW6432Node\Virtual Machine\Guest\Parameters\", arrEntryNames ,"HostName", strHostName
+				oReg.GetStringValue HKEY_LOCAL_MACHINE, "SOFTWARE\WOW6432Node\Virtual Machine\Guest\Parameters\", arrEntryNames ,"PhysicalHostName", strPhysicalHostName
+				oReg.GetStringValue HKEY_LOCAL_MACHINE, "SOFTWARE\WOW6432Node\Microsoft\Virtual Machine\Guest\Parameters\", arrEntryNames ,"PhysicalHostNameFullyQualified", strPhysicalHostNameFullyQualified
+				oReg.GetStringValue HKEY_LOCAL_MACHINE, "SOFTWARE\WOW6432Node\Microsoft\Virtual Machine\Guest\Parameters\", arrEntryNames ,"VirtualMachineName", strVirtualMachineName
+						
+				If IsEmpty(strPhysicalHostName) = False Then	
+				reportLine = "XOR_Physical Host Of" & "," & quotedString(strComputer) & "," & quotedString(strHostname1) & ","  & quotedString(strPhysicalHostName)	& ","  & quotedString(strPhysicalHostNameFullyQualified) & ","  & quotedString(strVirtualMachineName)				
+				Write2(reportLine)
+				End If
+				
+			Next	
+		End If
+
+		
+		Set oReg = Nothing
+		 
+ End Sub
+
+Sub GetProReg(strComputer)
+                Err.Clear				
+                On Error Resume Next				
+                Set oReg = GetObject("winmgmts:" & "{impersonationLevel=impersonate}!\\" & strComputer & "\root\default:StdRegProv")				
+                If Err.Number<>0 Then				
+                                Write2("[LOG-STATUS]" & "," & quotedString(strComputer) & "," & "Error " & Err.Number & " - " & Err.Description & "," & "ProRegistry Scan: Failed")				
+                                Err.Clear				
+                Else
+  
+				pathkeystr = "SOFTWARE\Classes\Installer\Products" 
+				oReg.EnumKey HKEY_LOCAL_MACHINE, pathkeystr, arrSubKeys121 
+  
+				For Each subkey1 In arrSubKeys121 
+				strValueName  = "ProductName" 
+     
+				strFullKeyPath = pathkeystr & "\" & subkey1 
+				oReg.GetStringValue HKEY_LOCAL_MACHINE, strFullKeyPath, strValueName, strValue  
+     
+				reportLine = "XOR_ProductReg" & "," & quotedString(strComputer) & "," & quotedString(strFullKeyPath) & "," & quotedString(strValue) 
+				lowerReportLine = LCase(reportLine)
+				If (IsNull(strValue) = False) Then
+					If (InStr(lowerReportLine, "microsoft")) Or (InStr(lowerReportLine, "windows")) Then
+						Write2(reportLine)
+					End If
+
+				End If		
+				Next
+
+				End If
+				
+End Sub 
+
+'********************************************
+'Purpose:
+'ARP add-remove complete scan
+
+Sub GetARPWMIC(strComputer)				
+                Err.Clear				
+                On Error Resume Next				
+                Set objWMIService = GetObject("winmgmts:{impersonationLevel=impersonate}!\\" & strComputer & "\root\cimv2")
+Set colItems = objWMIService.ExecQuery("Select * From Win32_NetworkAdapterConfiguration WHERE IPEnabled=TRUE")
+For Each objItem In colItems				
+                                                macaddress1 = objItem.MACAddress
+
+Set colSoftware = objWMIService.ExecQuery ("Select * from Win32_Product")
+For Each objSoftware In colSoftware
+reportLine = "XOR_ARP_MSI" & "," & quotedString(strComputer) & "," &objSoftware.Vendor & ", " & objSoftware.Name & ", " & objSoftware.version & ", " & objSoftware.installDate & ", " & objSoftware.installlocation & ", " & objSoftware.InstallSource & ", "& objSoftware.IdentifyingNumber
+			Write0(reportLine)
+Next
+Next
+WScript.Echo " ARP_MSI Scan: OK"				
+                			
+End Sub	                  
+
+'********************************************
+
+'********************************************
+'********************************************
+'********************************************
+'Purpose:
+'Cracks/Keygens
+
+Sub GetSearch(strComputer)
+	
+Set oFSO = CreateObject("Scripting.FileSystemObject")
+ Set oWshShell = CreateObject("WScript.Shell")
+ sDir = oWshShell.ExpandEnvironmentStrings("%temp%\dir.txt")
+
+
+ if oFSO.FileExists(sDir) then oFSO.DeleteFile(sDir)
+
+ For Each oDrive In oFSO.Drives
+     if oDrive.DriveType = 2 then Search oDrive.DriveLetter
+ Next
+
+ 
+WScript.Echo " scan: RUNNING"		
+End Sub
+Sub Search(sdrive)
+
+	Set oFSO = CreateObject("Scripting.FileSystemObject")
+ Set oWshShell = CreateObject("WScript.Shell")
+Set wshNetwork = WScript.CreateObject( "WScript.Network" )
+strComputer = wshNetwork.ComputerName
+sDir = oWshShell.ExpandEnvironmentStrings("%temp%\dir.txt")
+     WScript.Echo "Scanning drive " & sdrive & ":"
+     oWshShell.Run "cmd /c dir /s /b " & sdrive & ":\" & sName & " >>" & sDir, 0, True
+	Set oFile = oFSO.OpenTextFile(sDir, 1)
+ aNames = Split(oFile.ReadAll, VbCrLf)
+ oFile.Close
+ For Each sName In aNames
+     'If InStr(1, sName, "crack") then WScript.Echo sName
+	If (InStr(sName, "crack")) Or (InStr(sName, "keygen")) Or (InStr(sName, "crk")) Or (InStr(sName, "full version")) Or (InStr(sName, "serialkey")) Or (InStr(sname, "serial key")) Or (InStr(sname, "warez")) Or (InStr(sname, "cdkey")) Or (InStr(sname, "cd key")) Or (InStr(sname, "portable")) Then 
+'WScript.Echo sName
+reportLine = "XOR_File-Scan" & "," & quotedString(strComputer) & "," & quotedString(sName) 
+Write2(reportLine)
+	End If
+	Next
+
+ End Sub
+
+
+'********************************************
+'Purpose:
+'ARP Registry
+
+Sub GetARPRegalt(strComputer)				
+                Err.Clear				
+                On Error Resume Next
+		Const HKLM = &H80000002 'HKEY_LOCAL_MACHINE 
+Const APPEND = 8
+
+               Set objFSO = CreateObject("Scripting.FileSystemObject") 
+Set objShell = CreateObject("WScript.Shell")
+Set objReg = GetObject("winmgmts:{impersonationLevel=impersonate}!\\.\root\default:StdRegProv")
+strRegIdentityCodes = "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\"
+
+
+
+objReg.EnumKey HKLM, strRegIdentityCodes, arrIdentityCode
+
+For Each strIdentityCode In arrIdentityCode
+   strRegIdentityInfo = "HKLM\" & strRegIdentityCodes & "\" & strIdentityCode & "\"
+   strDisplayName = objShell.RegRead(strRegIdentityInfo & "DisplayName")
+   strDisplayVersion = objShell.RegRead(strRegIdentityInfo & "DisplayVersion")
+   strInstallDate = objShell.RegRead(strRegIdentityInfo & "InstallDate")
+   strUninstallString = objShell.RegRead(strRegIdentityInfo & "UninstallString")
+   strQuietUninstallString = objShell.RegRead(strRegIdentityInfo & "QuietUninstallString")
+strPublisher = objShell.RegRead(strRegIdentityInfo & "Publisher") 
+strsource = objShell.RegRead(strRegIdentityInfo & "InstallSource") 
+strlocation = objShell.RegRead(strRegIdentityInfo & "InstallLocation") 
+
+Set objWMIService = GetObject("winmgmts:{impersonationLevel=impersonate}!\\" & strHostName & "\root\cimv2")
+Set colItems = objWMIService.ExecQuery("Select * From Win32_NetworkAdapterConfiguration WHERE IPEnabled=TRUE")
+For Each objItem In colItems				
+                                                macaddress1 = objItem.MACAddress
+												
+reportLine = "XOR_ARP_REG" & "," & quotedString(strComputer) & "," & strPublisher & "," & strDisplayName & "," & strDisplayVersion & "," & strInstallDate & "," & strlocation & "," & strsource & "," & strIdentityCode 
+			Write0(reportLine)
+
+
+Next
+Next
+End Sub 
+
+'********************************************
+'Purpose:
+'ARP Registry 64 bit
+
+
+Sub GetARPRegals(strComputer)				
+                Err.Clear				
+                On Error Resume Next
+		Const HKLM = &H80000002 'HKEY_LOCAL_MACHINE 
+Const APPEND = 8	
+											
+                Set objFSO = CreateObject("Scripting.FileSystemObject") 
+Set objShell = CreateObject("WScript.Shell")
+Set objReg = GetObject("winmgmts:{impersonationLevel=impersonate}!\\.\root\default:StdRegProv")
+strRegIdentityCodes = "SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\"
+
+objReg.EnumKey HKLM, strRegIdentityCodes, arrIdentityCode
+
+For Each strIdentityCode In arrIdentityCode
+   strRegIdentityInfo = "HKLM\" & strRegIdentityCodes & "\" & strIdentityCode & "\"
+   strDisplayName = objShell.RegRead(strRegIdentityInfo & "DisplayName")
+   strDisplayVersion = objShell.RegRead(strRegIdentityInfo & "DisplayVersion")
+   strInstallDate = objShell.RegRead(strRegIdentityInfo & "InstallDate")
+   strUninstallString = objShell.RegRead(strRegIdentityInfo & "UninstallString")
+   strQuietUninstallString = objShell.RegRead(strRegIdentityInfo & "QuietUninstallString")
+strPublisher = objShell.RegRead(strRegIdentityInfo & "Publisher") 
+strsource = objShell.RegRead(strRegIdentityInfo & "InstallSource") 
+strlocation = objShell.RegRead(strRegIdentityInfo & "InstallLocation") 
+
+Set objWMIService = GetObject("winmgmts:{impersonationLevel=impersonate}!\\" & strHostName & "\root\cimv2")
+Set colItems = objWMIService.ExecQuery("Select * From Win32_NetworkAdapterConfiguration WHERE IPEnabled=TRUE")
+For Each objItem In colItems				
+                                                macaddress1 = objItem.MACAddress
+
+reportLine = "XOR_ARP_REG" & "," & quotedString(strComputer) & "," & strPublisher & "," & strDisplayName & "," & strDisplayVersion & "," & strInstallDate & "," & strlocation & "," & strsource & "," & strIdentityCode 
+			Write0(reportLine)
+
+
+Next
+Next
+WScript.Echo " ARP_REG Scan : OK"
+End Sub 
+
+'********************************************
+'Purpose:
+'Uninstall programs
+
+Sub UninstalledPrograms_all_Events(strHostName)				
+                Err.Clear				
+                On Error Resume Next				
+                Set objWMIService = GetObject("winmgmts:{impersonationLevel=impersonate}!\\" & strHostName & "\root\cimv2")				
+                Set colEvents = objWMIService.ExecQuery("Select * from Win32_NTLogEvent Where LogFile='Application' And EventCode='11724' Or EventCode='11728'")				
+                If Err.Number<>0 Then				
+                                If supressEchos <> 1 Then				
+                                WScript.Echo " Uninstalled-Softwares Scan: Error"				
+                                End If				
+                                Write0("[LOG-STATUS]" & "," & quotedString(strHostName) & "," & "Error " & Err.Number & " - " & Err.Description & "," & "Uninstalled-Softwares Scan: Failed")				
+                                Err.Clear				
+                Else				
+                sTmp = ""				
+                For Each objEvent In colEvents				
+                                strDescription = objEvent.Message
+								If IsNull(objEvent.User) Then
+								strUser = "User not found"
+								Else
+								strUser = objEvent.User
+								End If								
+                                If IsNull(strDescription) Then				
+                                                strDescription = "The event description cannot be found."				
+                                Else				
+                                                For Each objSoftwareKeyword In arrSoftware				
+                                                                                                             				
+                                                                                strTimeWritten = objEvent.TimeWritten				
+                                                                                dtmTimeWritten = CDate(Mid(strTimeWritten, 5, 2) & "/" & _				
+                                                                                                Mid(strTimeWritten, 7, 2) & "/" & Left(strTimeWritten, 4) _				
+                                                                                                                & " " & Mid (strTimeWritten, 9, 2) & ":" & _				
+                                                                                                                                Mid(strTimeWritten, 11, 2) & ":" & Mid(strTimeWritten, 13, 2))				
+                                                                                dtmDate = FormatDateTime(dtmTimeWritten, vbShortDate)				
+                                                                                dtmTime = FormatDateTime(dtmTimeWritten, vbLongTime)				
+																				strEvent = quotedString(dtmDate) & "," & quotedString(dtmTime)	
+																				strEvent = "XOR_UnInst-Soft" & "," & quotedString(strHostName) & "," & strEvent & "," & quotedString(strDescription) & "," & quotedString(strUser)
+																				
+																				Write0(strEvent) 			
+                                                                Exit For				
+                                                                			
+                                                Next				
+                                End If				
+                Next				
+            					
+				
+                End If    				
+				
+    	
+End Sub	
+
+'********************************************
+'Purpose:
+'Services and processes
+
+Sub Services_processes1(strComputer)				
+                Err.Clear				
+                On Error Resume Next				
+                Set objWMIService = GetObject("winmgmts:" _
+& "{impersonationLevel=impersonate}!\\" _ 
+& strComputer & "\root\cimv2") 
+
+Set colProcess = objWMIService.ExecQuery _
+("Select * from Win32_Process")
+
+For Each objProcess In colProcess
+reportLine = "XOR_Processes" & "," & quotedString(strHostName) & "," & objProcess.Name & ", " & objProcess.ExecutablePath
+
+Write0(reportLine)
+Next
+WScript.Echo " Processes : OK ..."
+End Sub
+
+Sub Services_processes2(strComputer)				
+                Err.Clear				
+                On Error Resume Next				
+                Set objWMIService = GetObject("winmgmts:" _
+& "{impersonationLevel=impersonate}!\\" _ 
+& strComputer & "\root\cimv2") 
+
+Set colProcess = objWMIService.ExecQuery _
+("Select * from Win32_Service")
+
+For Each objProcess In colProcess
+reportLine = "XOR_Services" & "," & quotedString(strHostName) & "," & objProcess.DisplayName & ", " & objProcess.State & ", " & objProcess.StartMode & ", " & objProcess.PathName & ", " & objProcess.Description
+
+Write0(reportLine)
+Next
+WScript.Echo " Services : OK ..."
+End Sub
+
+
+Sub Completedetails(strComputer)				
+                Err.Clear				
+                On Error Resume Next				
+                Set objWMIService = GetObject("winmgmts:" & "{impersonationLevel=impersonate}!\\" & strComputer & "\root\cimv2")				
+                   				
+                                Set colItems = objWMIService.ExecQuery("Select * from Win32_ComputerSystem")				
+                                For Each objItem In colItems				
+                                                dnshostname = objItem.DNSHostName
+												partofdomain = objItem.PartOfDomain
+												domain = objItem.Domain
+												workgroup = objItem.Workgroup
+												hypervisor = objItem.HypervisorPresent
+												Manufacturer = objItem.Manufacturer				
+                                                Model = objItem.Model
+												primaryowner = objItem.PrimaryOwnerName
+												username = objItem.UserName												
+												roles = objItem.Roles
+												installdate = objItem.InstallDate
+                                                NoOfPhysicalProc = objItem.NumberOfProcessors
+												NoOflogicalProc = objItem.NumberofLogicalProcessors
+												systemtype = objItem.SystemType
+
+								Set colItems2 = objWMIService.ExecQuery("Select * from Win32_OperatingSystem")
+								For Each objItem2 In colItems2
+												OS_name = objItem2.Caption
+												os_installdate = objItem2.InstallDate
+												os_SystemDate = objItem2.LocalDateTime
+												osversion = objItem2.Version
+												windowsdirectory = objItem2.WindowsDirectory
+
+								Set colItems3 = objWMIService.ExecQuery("Select * from Win32_BIOS")
+								For Each objItem3 In colItems3
+												bios_manufacturer = objItem3.Manufacturer
+												bios_name = objItem3.Name
+												bios_date = objItem3.ReleaseDate
+												bios_serial = objItem3.SerialNumber
+
+								Set colItems4 = objWMIService.ExecQuery("Select * from Win32_ComputersystemProduct")
+								For Each objItem4 In colItems4
+												vendor = objItem4.Vendor
+												vendor_version = objItem4.Version
+
+								Set colItems5 = objWMIService.ExecQuery("Select * from Win32_Processor")
+								For Each objItem5 In colItems5
+												cpu_deviceid = objItem5.DeviceID
+												cpu_manufacturer = objItem5.Manufacturer
+												cpu_name = objItem5.Name
+												cpu_cores = objItem5.NumberOfCores
+												cpu_logicalproc = objItem5.NumberOfLogicalProcessors
+												cpu_socket = objItem5.SocketDesignation
+												
+												
+												
+reportLine = "XOR_Complete_details" & "," & quotedString(strComputer) & "," & dnshostname & "," & partofdomain & "," & domain & "," & workgroup & "," & OS_name & "," & quotedString(osversion) & "," & quotedString(os_installdate) & "," & quotedString(os_SystemDate) & "," & windowsdirectory & "," & vendor & "," & vendor_version & "," & Model & "," & bios_manufacturer & "," & bios_name & "," & quotedString(bios_date) & "," & quotedString(bios_serial) & "," & systemtype & "," & hypervisor & "," & primaryowner & "," & username
+reportLine1 = "XOR_CPU_details" & "," & quotedString(strComputer) & "," & cpu_manufacturer & "," & cpu_name & "," & quotedString(noOfPhysicalProc) & "," & quotedString(cpu_cores) & "," & quotedString(cpu_logicalproc) & "," & quotedString(cpu_deviceid) & "," & cpu_socket
+   
+											Write0(reportLine)
+											Write0(reportLine1)
+											
+                                                                      				
+								Next				
+								Next
+								Next
+								Next
+								Next
+                                WScript.Echo " Complete_details scan: OK"				
+ End Sub                              			                			
+
+Sub Getserverrole(strComputer)				
+                Err.Clear				
+                On Error Resume Next				
+                Set objWMIService = GetObject("winmgmts:{impersonationLevel=impersonate}!\\" & strComputer & "\root\cimv2")
+Set colRoleFeatures = objWMIService.ExecQuery ("Select * from Win32_ServerFeature")
+For Each objRoleFeatures In colRoleFeatures
+reportLine = "XOR_Server_Roles" & "," & quotedString(strComputer) & "," & objRoleFeatures.Name
+			Write0(reportLine)
+Next
+
+WScript.Echo " Scan_Roles: OK"				
+                			
+End Sub	 
